@@ -7,8 +7,8 @@ async function fetchAPIData(endpoint) {
     method: 'GET',
     headers: {
       Authorization: `Bearer ${api_key}`,
-      'content-Type': 'application/json',
-    },
+      'content-Type': 'application/json'
+    }
   });
 
   const data = await res.json();
@@ -68,14 +68,14 @@ const scrollAmount = 300;
 btnLeft.addEventListener('click', () => {
   scrollContainer.scrollBy({
     left: -scrollAmount,
-    behavior: 'smooth',
+    behavior: 'smooth'
   });
 });
 
 btnRight.addEventListener('click', () => {
   scrollContainer.scrollBy({
     left: scrollAmount,
-    behavior: 'smooth',
+    behavior: 'smooth'
   });
 });
 
