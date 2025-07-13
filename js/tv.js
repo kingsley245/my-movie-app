@@ -25,10 +25,7 @@ async function trendingMoviesTV(params) {
     wrapper.innerHTML = '';
 
     results.forEach((movie) => {
-      const title =
-        movie.title.length > 30
-          ? movie.title.slice(0, 30) + '...'
-          : movie.title;
+      const title = movie.title;
       const rating = movie.vote_average.toFixed(1); // Rounded to 1 decimal
       const poster = movie.poster_path
         ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
