@@ -53,3 +53,5 @@ async function trendingMoviesTV(params) {
     console.error(' Error fetching videos from TMDB:', error);
   }
 }
+
+trendingMoviesTV();
