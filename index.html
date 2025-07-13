@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/searchCss.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="/images/icons8-netflix-24.png" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="./css/AfterSigninPage.css" />
+    <title>Movies Display sign in</title>
+  </head>
+  <body>
+    <nav class="navbar__section-netflix-container-first">
+      <div class="navbar__display-container">
+        <div class="navbar-menu no-shrink" style="flex-shrink: 0">
+          <i
+            class="fas fa-bars fa-2x text-white menu-toggl cursor-pointer"
+            id="menuToggle"
+          ></i>
+          <div class="logo__menu-join">
+            <img src="/images/netflix-3.svg" alt="Netflix logo" />
+          </div>
+          <div class="search-input-movies_T_Shows">
+            <i class="fas fa-search"></i>
+            <input
+              type="submit"
+              name="search"
+              id="search"
+              placeholder="Search Movies/ TV shows"
+            />
+          </div>
+        </div>
+        <div class="navbar-download-app">
+          <div class="download-app">
+            <i class="fas fa-download"></i>
+            <a href="#">Download App</a>
+          </div>
+          <div class="navbar-Watch-history">
+            <i class="fas fa-history"></i>
+            <a href="#">Watch history</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar-overlay hidden" id="sidebarOverlay"></div>
+
+    <aside class="sidebar-menu" id="sidebarMenu">
+      <ul class="sidebar-links">
+        <li><i class="fas fa-home"></i><a href="/home.html">Home</a></li>
+        <li><i class="fas fa-tv"></i><a href="#">Tv Shows</a></li>
+        <li><i class="fas fa-film"></i><a href="#">Movie</a></li>
+        <li><i class="fas fa-dragon"></i> <a href="#">Trending</a></li>
+        <li><i class="fas fa-futbol"></i> <a href="#">Tv series</a></li>
+        <li><i class="fas fa-book"></i> <a href="#">Search</a></li>
+      </ul>
+    </aside>
+    <div class="after-On-device-small">
+      <div class="search-center-justify">
+        <i class="fas fa-search"></i>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search Movies/ TV shows"
+        />
+      </div>
+    </div>
+
+    <div class="sidebar-larger-screen__container">
+      <div class="side__bar-container-list">
+        <ul class="sidebar__list-item">
+          <li class="sidebar-list-item-l">
+            <i class="fas fa-home"></i
+            ><a href="#home" class="left-side">Home</a>
+          </li>
+          <li class="sidebar-list-item-l">
+            <i class="fas fa-tv"></i><a href="#tv" class="left-side">Tv show</a>
+          </li>
+          <li class="sidebar-list-item-l">
+            <i class="fas fa-film"></i
+            ><a href="#Movie" class="left-side">Movie</a>
+          </li>
+          <li class="sidebar-list-item-l">
+            <i class="fas fa-fire"></i
+            ><a href="#Trending" class="left-side">Trending</a>
+          </li>
+          <li class="sidebar-list-item-l">
+            <i class="fas fa-dragon"></i
+            ><a href="#tvseries" class="left-side">Tv series</a>
+          </li>
+          <li class="sidebar-list-item-l">
+            <i class="fas fa-search"></i
+            ><a href="#search" class="left-side">Searched</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__down-content">
+        <div class="footer-down-links">
+          <ul class="footer-down-link__item">
+            <li class="items-links">
+              <a href="#" class="">WhatsApp</a>
+            </li>
+            <li class="items-links">
+              <a href="#" class="">Telegram</a>
+            </li>
+            <li class="items-links">
+              <a href="#" class="">Facebook</a>
+            </li>
+            <li class="items-links">
+              <a href="#" class="">TikTok</a>
+            </li>
+            <li class="items-links"><a href="#" class="">X</a></li>
+            <li class="items-links"><a href="#" class="">Email</a></li>
+            <li class="items-links">
+              <a href="#" class="">Privacy Policy</a>
+            </li>
+            <li class="items-links">
+              <a href="#" class="">User agreement</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <main class="trending-section" id="homeContent"></main>
+
+    <script>
+      const menuToggle = document.getElementById('menuToggle');
+      const sidebarMenu = document.getElementById('sidebarMenu');
+      const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+      menuToggle.addEventListener('click', () => {
+        sidebarMenu.classList.add('show');
+        sidebarMenu.classList.remove('hidden');
+        sidebarOverlay.classList.remove('hidden');
+      });
+
+      sidebarOverlay.addEventListener('click', () => {
+        sidebarMenu.classList.remove('show');
+        sidebarMenu.classList.add('hidden');
+        sidebarOverlay.classList.add('hidden');
+      });
+    </script>
+
+    <footer class="after-side-card">
+      <div class="content-paragraph">
+        <p class="all content">
+          All contents are uploaded by users. Moviebox only provides webpage
+          services and does not store, record, or upload any content. If you
+          find any content infringe on your rights, please contact us by
+          <strong>" Report content "</strong>
+        </p>
+        <div class="backlink">
+          <ul class="backed-link">
+            <h6 class="backlink-liks">Backlink:</h6>
+            <li class="movie-backlinks hover:underline">
+              <a href="#" class="movie-backlink">AHA Games</a>
+            </li>
+            <li class="movie-backlinks hover:underline">
+              <a href="#" class="movie-backlink">novelHub</a>
+            </li>
+            <li class="movie-backlinks hover:underline">
+              <a href="#" class="movie-backlink">free movies</a>
+            </li>
+            <li class="movie-backlinks hover:underline">
+              <a href="#" class="movie-backlink">netnaija movies</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <!-- <script src="./js/scrip.js"></script> -->
+  <script src="./js.js"></script>
+</html>

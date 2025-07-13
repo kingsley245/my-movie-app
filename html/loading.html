@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Loader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes pulseSquare {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(0.6);
+          opacity: 0.5;
+        }
+      }
+
+      .pulse-square {
+        animation: pulseSquare 1s infinite ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center min-h-screen">
+    <div id="lottie-loader" class="w-24 h-24"></div>
+    <script src="https://unpkg.com/lottie-web/build/player/lottie.min.js"></script>
+    <script>
+      lottie.loadAnimation({
+        container: document.getElementById('lottie-loader'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://assets3.lottiefiles.com/packages/lf20_usmfx6bp.json'
+      });
+    </script>
+
+    <style>
+      .dot-bounce {
+        animation: bounce 1.2s infinite ease-in-out;
+      }
+      .dot-bounce:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .dot-bounce:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+      @keyframes bounce {
+        0%,
+        80%,
+        100% {
+          transform: scale(0);
+        }
+        40% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </body>
+</html>

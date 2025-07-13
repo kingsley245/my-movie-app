@@ -1,0 +1,351 @@
+[2025-06-16T02:32:35.491Z] info: 🚀 Server started on port 5000
+[2025-06-16T02:48:03.050Z] info: 🚀 Server started on port 5000
+[2025-06-16T08:06:41.576Z] info: 🚀 Server started on port 5000
+[2025-06-17T10:54:02.307Z] info: 🚀 Server started on port 5000
+[2025-06-22T20:15:21.804Z] info: 🚀 Server started on port 5000
+[2025-06-27T22:39:07.134Z] info: 🚀 Server started on port 5000
+[2025-06-29T16:19:44.965Z] info: 🚀 Server started on port 5000
+[2025-06-29T16:22:08.362Z] info: 🚀 Server started on port 5000
+[2025-06-29T17:17:03.977Z] info: Server started on port 5000
+[2025-06-29T17:25:36.270Z] info: Server started on port 5000
+[2025-06-29T17:29:55.838Z] info: Server started on port 5000
+[2025-06-29T17:38:57.048Z] info: Server started on port 5000
+[2025-06-29T18:13:23.174Z] info: Server started on port 5000
+[2025-06-29T18:29:53.502Z] info: Server started on port 5000
+[2025-06-29T18:31:31.194Z] info: Server started on port 5000
+[2025-06-29T18:33:25.504Z] info: Server started on port 5000
+[2025-06-29T18:40:45.653Z] info: Server started on port 5000
+[2025-06-29T18:51:43.592Z] info: Server started on port 5000
+[2025-06-29T18:53:09.337Z] info: Server started on port 5000
+[2025-07-02T14:32:22.664Z] info: Server started on port 5000
+[2025-07-02T14:32:25.428Z] info: MongoDB connected
+[2025-07-02T14:39:09.110Z] error: TMDB fetch failed at endpoint trending/movie/day: getaddrinfo EAI_AGAIN api.themoviedb.org
+[2025-07-02T14:39:24.512Z] info: ✅ Saved: Thunderbolts*
+[2025-07-02T14:39:24.894Z] info: ✅ Saved: Final Destination Bloodlines
+[2025-07-02T14:39:25.279Z] info: ✅ Saved: Ballerina
+[2025-07-02T14:39:25.667Z] info: ✅ Saved: First Shift
+[2025-07-02T14:39:26.108Z] info: ✅ Saved: Lilo & Stitch
+[2025-07-02T14:39:26.508Z] info: ✅ Saved: The Twisters
+[2025-07-02T14:39:26.902Z] info: ✅ Saved: How to Train Your Dragon
+[2025-07-02T14:39:27.268Z] info: ✅ Saved: KPop Demon Hunters
+[2025-07-02T14:39:27.664Z] info: ✅ Saved: F1
+[2025-07-02T14:39:28.067Z] info: ✅ Saved: Distant
+[2025-07-02T14:39:28.490Z] info: ✅ Saved: Crazy Lizard
+[2025-07-02T14:39:28.870Z] info: ✅ Saved: Squid Game: Making Season 2
+[2025-07-02T14:39:29.255Z] info: ✅ Saved: 28 Years Later
+[2025-07-02T14:39:29.621Z] info: ✅ Saved: Candle in the Tomb: The Worm Valley
+[2025-07-02T14:39:29.996Z] info: ✅ Saved: Jurassic World Rebirth
+[2025-07-02T14:39:30.384Z] info: ✅ Saved: The Amateur
+[2025-07-02T14:39:30.786Z] info: ✅ Saved: A Minecraft Movie
+[2025-07-02T14:39:31.172Z] info: ✅ Saved: Diablo
+[2025-07-02T14:39:31.577Z] info: ✅ Saved: Squid Game: Fireplace
+[2025-07-02T14:39:31.959Z] info: ✅ Saved: Fear Cabin: The Last Weekend of Summer
+[2025-07-02T14:44:08.732Z] info: ⚠️ Skipped (already exists): Thunderbolts*
+[2025-07-02T14:44:08.924Z] info: ⚠️ Skipped (already exists): Final Destination Bloodlines
+[2025-07-02T14:44:09.113Z] info: ⚠️ Skipped (already exists): Ballerina
+[2025-07-02T14:44:09.314Z] info: ⚠️ Skipped (already exists): First Shift
+[2025-07-02T14:44:09.501Z] info: ⚠️ Skipped (already exists): Lilo & Stitch
+[2025-07-02T14:44:09.698Z] info: ⚠️ Skipped (already exists): The Twisters
+[2025-07-02T14:44:09.892Z] info: ⚠️ Skipped (already exists): How to Train Your Dragon
+[2025-07-02T14:44:10.098Z] info: ⚠️ Skipped (already exists): KPop Demon Hunters
+[2025-07-02T14:44:10.296Z] info: ⚠️ Skipped (already exists): F1
+[2025-07-02T14:44:10.486Z] info: ⚠️ Skipped (already exists): Distant
+[2025-07-02T14:44:10.664Z] info: ⚠️ Skipped (already exists): Crazy Lizard
+[2025-07-02T14:44:10.853Z] info: ⚠️ Skipped (already exists): Squid Game: Making Season 2
+[2025-07-02T14:44:11.049Z] info: ⚠️ Skipped (already exists): 28 Years Later
+[2025-07-02T14:44:11.236Z] info: ⚠️ Skipped (already exists): Candle in the Tomb: The Worm Valley
+[2025-07-02T14:44:11.416Z] info: ⚠️ Skipped (already exists): Jurassic World Rebirth
+[2025-07-02T14:44:11.614Z] info: ⚠️ Skipped (already exists): The Amateur
+[2025-07-02T14:44:11.806Z] info: ⚠️ Skipped (already exists): A Minecraft Movie
+[2025-07-02T14:44:12.006Z] info: ⚠️ Skipped (already exists): Diablo
+[2025-07-02T14:44:12.186Z] info: ⚠️ Skipped (already exists): Squid Game: Fireplace
+[2025-07-02T14:44:12.362Z] info: ⚠️ Skipped (already exists): Fear Cabin: The Last Weekend of Summer
+[2025-07-02T14:53:06.986Z] info: ⚠️ Skipped (already exists): Thunderbolts*
+[2025-07-02T14:53:07.170Z] info: ⚠️ Skipped (already exists): Final Destination Bloodlines
+[2025-07-02T14:53:07.368Z] info: ⚠️ Skipped (already exists): Ballerina
+[2025-07-02T14:53:07.562Z] info: ⚠️ Skipped (already exists): First Shift
+[2025-07-02T14:53:07.765Z] info: ⚠️ Skipped (already exists): Lilo & Stitch
+[2025-07-02T14:53:07.955Z] info: ⚠️ Skipped (already exists): The Twisters
+[2025-07-02T14:53:08.146Z] info: ⚠️ Skipped (already exists): How to Train Your Dragon
+[2025-07-02T14:53:08.334Z] info: ⚠️ Skipped (already exists): KPop Demon Hunters
+[2025-07-02T14:53:08.532Z] info: ⚠️ Skipped (already exists): F1
+[2025-07-02T14:53:08.727Z] info: ⚠️ Skipped (already exists): Distant
+[2025-07-02T14:53:08.909Z] info: ⚠️ Skipped (already exists): Crazy Lizard
+[2025-07-02T14:53:09.096Z] info: ⚠️ Skipped (already exists): Squid Game: Making Season 2
+[2025-07-02T14:53:09.295Z] info: ⚠️ Skipped (already exists): 28 Years Later
+[2025-07-02T14:53:09.480Z] info: ⚠️ Skipped (already exists): Candle in the Tomb: The Worm Valley
+[2025-07-02T14:53:09.659Z] info: ⚠️ Skipped (already exists): Jurassic World Rebirth
+[2025-07-02T14:53:09.854Z] info: ⚠️ Skipped (already exists): The Amateur
+[2025-07-02T14:53:10.036Z] info: ⚠️ Skipped (already exists): A Minecraft Movie
+[2025-07-02T14:53:10.220Z] info: ⚠️ Skipped (already exists): Diablo
+[2025-07-02T14:53:10.413Z] info: ⚠️ Skipped (already exists): Squid Game: Fireplace
+[2025-07-02T14:53:10.610Z] info: ⚠️ Skipped (already exists): Fear Cabin: The Last Weekend of Summer
+[2025-07-02T15:02:49.533Z] info: ✅ Saved: The Old Guard 2
+[2025-07-02T15:02:49.725Z] info: ⚠️ Skipped (already exists): Ballerina
+[2025-07-02T15:02:49.923Z] info: ⚠️ Skipped (already exists): Thunderbolts*
+[2025-07-02T15:02:50.339Z] info: ✅ Saved: Heads of State
+[2025-07-02T15:02:50.758Z] info: ✅ Saved: Bring Her Back
+[2025-07-02T15:02:50.950Z] info: ⚠️ Skipped (already exists): Jurassic World Rebirth
+[2025-07-02T15:02:51.339Z] info: ✅ Saved: Ice Road: Vengeance
+[2025-07-02T15:02:51.883Z] info: ✅ Saved: The Old Guard
+[2025-07-02T15:02:52.191Z] info: ⚠️ Skipped (already exists): F1
+[2025-07-02T15:02:52.600Z] info: ✅ Saved: Superman
+[2025-07-02T15:02:53.043Z] info: ✅ Saved: Guns Up
+[2025-07-02T15:02:53.421Z] info: ✅ Saved: Tornado
+[2025-07-02T15:02:53.603Z] info: ⚠️ Skipped (already exists): Lilo & Stitch
+[2025-07-02T15:02:54.065Z] info: ✅ Saved: Sinners
+[2025-07-02T15:02:54.458Z] info: ✅ Saved: The Running Man
+[2025-07-02T15:02:54.755Z] info: ⚠️ Skipped (already exists): KPop Demon Hunters
+[2025-07-02T15:02:55.161Z] info: ✅ Saved: The Phoenician Scheme
+[2025-07-02T15:02:55.674Z] info: ✅ Saved: M3GAN 2.0
+[2025-07-02T15:02:56.184Z] info: ✅ Saved: The Fantastic Four: First Steps
+[2025-07-02T15:02:56.491Z] info: ⚠️ Skipped (already exists): How to Train Your Dragon
+[2025-07-02T21:27:27.965Z] info: Server started on port 5000
+[2025-07-02T21:28:17.407Z] error: MongoDB error: querySrv ETIMEOUT _mongodb._tcp.netflixclone1.mmg8t2t.mongodb.net
+[2025-07-04T19:32:44.726Z] info: Server started on port 5000
+[2025-07-04T19:32:47.147Z] info: MongoDB connected
+[2025-07-04T19:58:26.279Z] info: ⚠️ Skipped (already exists): Ballerina
+[2025-07-04T19:58:26.488Z] info: ⚠️ Skipped (already exists): Thunderbolts*
+[2025-07-04T19:58:26.711Z] info: ⚠️ Skipped (already exists): The Old Guard 2
+[2025-07-04T19:58:26.926Z] info: ⚠️ Skipped (already exists): Final Destination Bloodlines
+[2025-07-04T19:58:27.158Z] info: ⚠️ Skipped (already exists): Heads of State
+[2025-07-04T19:58:27.387Z] info: ⚠️ Skipped (already exists): Ice Road: Vengeance
+[2025-07-04T19:58:27.589Z] info: ⚠️ Skipped (already exists): Lilo & Stitch
+[2025-07-04T19:58:27.830Z] info: ⚠️ Skipped (already exists): Jurassic World Rebirth
+[2025-07-04T19:58:28.079Z] info: ⚠️ Skipped (already exists): First Shift
+[2025-07-04T19:58:28.314Z] info: ⚠️ Skipped (already exists): How to Train Your Dragon
+[2025-07-04T19:58:28.541Z] info: ⚠️ Skipped (already exists): KPop Demon Hunters
+[2025-07-04T19:58:28.808Z] info: ⚠️ Skipped (already exists): F1
+[2025-07-04T19:58:29.023Z] info: ⚠️ Skipped (already exists): The Twisters
+[2025-07-04T19:58:29.238Z] info: ⚠️ Skipped (already exists): Bring Her Back
+[2025-07-04T19:58:29.454Z] info: ⚠️ Skipped (already exists): Squid Game: Making Season 2
+[2025-07-04T19:58:29.699Z] info: ⚠️ Skipped (already exists): Distant
+[2025-07-04T19:58:30.276Z] info: ✅ Saved: The Ritual
+[2025-07-04T19:58:30.521Z] info: ⚠️ Skipped (already exists): 28 Years Later
+[2025-07-04T19:58:30.774Z] info: ⚠️ Skipped (already exists): Crazy Lizard
+[2025-07-04T19:58:31.840Z] info: ✅ Saved: Muromachi Burai
+[2025-07-04T19:58:39.552Z] info: ⚠️ Skipped (already exists): The Old Guard 2
+[2025-07-04T19:58:39.769Z] info: ⚠️ Skipped (already exists): Thunderbolts*
+[2025-07-04T19:58:39.991Z] info: ⚠️ Skipped (already exists): Heads of State
+[2025-07-04T19:58:40.222Z] info: ⚠️ Skipped (already exists): Ballerina
+[2025-07-04T19:58:40.455Z] info: ⚠️ Skipped (already exists): Jurassic World Rebirth
+[2025-07-04T19:58:40.921Z] info: ✅ Saved: Dora and the Search for Sol Dorado
+[2025-07-04T19:58:41.125Z] info: ⚠️ Skipped (already exists): Bring Her Back
+[2025-07-04T19:58:41.319Z] info: ⚠️ Skipped (already exists): F1
+[2025-07-04T19:58:41.539Z] info: ⚠️ Skipped (already exists): Superman
+[2025-07-04T19:58:41.754Z] info: ⚠️ Skipped (already exists): Sinners
+[2025-07-04T19:58:42.002Z] info: ⚠️ Skipped (already exists): The Old Guard
+[2025-07-04T19:58:42.237Z] info: ⚠️ Skipped (already exists): Ice Road: Vengeance
+[2025-07-04T19:58:42.442Z] info: ⚠️ Skipped (already exists): The Fantastic Four: First Steps
+[2025-07-04T19:58:42.675Z] info: ⚠️ Skipped (already exists): 28 Years Later
+[2025-07-04T19:58:42.958Z] info: ⚠️ Skipped (already exists): Guns Up
+[2025-07-04T19:58:44.084Z] info: ⚠️ Skipped (already exists): M3GAN 2.0
+[2025-07-04T19:58:44.308Z] info: ⚠️ Skipped (already exists): KPop Demon Hunters
+[2025-07-04T19:58:44.540Z] info: ⚠️ Skipped (already exists): Final Destination Bloodlines
+[2025-07-04T19:58:45.022Z] info: ✅ Saved: xXx
+[2025-07-04T19:58:45.234Z] info: ⚠️ Skipped (already exists): Lilo & Stitch
+[2025-07-04T19:59:23.769Z] info: ⚠️ Skipped (already exists): Bring Her Back
+[2025-07-04T19:59:24.033Z] info: ⚠️ Skipped (already exists): The Ritual
+[2025-07-04T19:59:24.317Z] info: ⚠️ Skipped (already exists): M3GAN 2.0
+[2025-07-04T19:59:24.551Z] info: ⚠️ Skipped (already exists): Superman
+[2025-07-04T19:59:25.043Z] info: ✅ Saved: Elio
+[2025-07-04T19:59:25.520Z] info: ✅ Saved: Sonic the Hedgehog 3
+[2025-07-04T19:59:25.983Z] info: ✅ Saved: Shadow Force
+[2025-07-04T19:59:26.450Z] info: ✅ Saved: Karate Kid: Legends
+[2025-07-04T19:59:26.865Z] info: ✅ Saved: given the Movie: To the Sea
+[2025-07-04T19:59:27.060Z] info: ⚠️ Skipped (already exists): The Fantastic Four: First Steps
+[2025-07-04T19:59:27.479Z] info: ✅ Saved: The Ugly Stepsister
+[2025-07-04T19:59:27.898Z] info: ✅ Saved: Bambi: A Life in the Woods
+[2025-07-04T19:59:28.347Z] info: ✅ Saved: Daniela Forever
+[2025-07-04T19:59:28.774Z] info: ✅ Saved: The Shrouds
+[2025-07-04T19:59:29.185Z] info: ✅ Saved: The Legend of Ochi
+[2025-07-04T19:59:29.593Z] info: ✅ Saved: Demon Slayer: Kimetsu no Yaiba Infinity Castle
+[2025-07-04T19:59:29.799Z] info: ⚠️ Skipped (already exists): Guns Up
+[2025-07-04T19:59:30.039Z] info: ⚠️ Skipped (already exists): Tornado
+[2025-07-04T19:59:30.462Z] info: ✅ Saved: The Garfield Movie
+[2025-07-04T19:59:30.888Z] info: ✅ Saved: Smurfs
+[2025-07-04T20:02:24.126Z] info: ⚠️ Skipped (already exists): Thunderbolts*
+[2025-07-04T20:02:24.257Z] info: ⚠️ Skipped (already exists): The Old Guard 2
+[2025-07-04T20:02:24.396Z] info: ⚠️ Skipped (already exists): Heads of State
+[2025-07-04T20:02:24.529Z] info: ⚠️ Skipped (already exists): Ballerina
+[2025-07-04T20:02:24.662Z] info: ⚠️ Skipped (already exists): Jurassic World Rebirth
+[2025-07-04T20:02:24.808Z] info: ⚠️ Skipped (already exists): Dora and the Search for Sol Dorado
+[2025-07-04T20:02:24.962Z] info: ⚠️ Skipped (already exists): Bring Her Back
+[2025-07-04T20:02:25.097Z] info: ⚠️ Skipped (already exists): F1
+[2025-07-04T20:02:25.230Z] info: ⚠️ Skipped (already exists): Sinners
+[2025-07-04T20:02:25.362Z] info: ⚠️ Skipped (already exists): Superman
+[2025-07-04T20:02:25.501Z] info: ⚠️ Skipped (already exists): The Old Guard
+[2025-07-04T20:02:25.630Z] info: ⚠️ Skipped (already exists): Ice Road: Vengeance
+[2025-07-04T20:02:25.781Z] info: ⚠️ Skipped (already exists): The Fantastic Four: First Steps
+[2025-07-04T20:02:25.928Z] info: ⚠️ Skipped (already exists): 28 Years Later
+[2025-07-04T20:02:26.065Z] info: ⚠️ Skipped (already exists): Guns Up
+[2025-07-04T20:02:26.207Z] info: ⚠️ Skipped (already exists): xXx
+[2025-07-04T20:02:26.343Z] info: ⚠️ Skipped (already exists): M3GAN 2.0
+[2025-07-04T20:02:26.508Z] info: ⚠️ Skipped (already exists): KPop Demon Hunters
+[2025-07-04T20:02:26.660Z] info: ⚠️ Skipped (already exists): Final Destination Bloodlines
+[2025-07-04T20:02:26.797Z] info: ⚠️ Skipped (already exists): Lilo & Stitch
+[2025-07-04T20:02:32.143Z] info: ⚠️ Skipped (already exists): Thunderbolts*
+[2025-07-04T20:02:32.262Z] info: ⚠️ Skipped (already exists): The Old Guard 2
+[2025-07-04T20:02:32.391Z] info: ⚠️ Skipped (already exists): Heads of State
+[2025-07-04T20:02:32.529Z] info: ⚠️ Skipped (already exists): Ballerina
+[2025-07-04T20:02:32.676Z] info: ⚠️ Skipped (already exists): Jurassic World Rebirth
+[2025-07-04T20:02:32.829Z] info: ⚠️ Skipped (already exists): Dora and the Search for Sol Dorado
+[2025-07-04T20:02:32.952Z] info: ⚠️ Skipped (already exists): Bring Her Back
+[2025-07-04T20:02:33.111Z] info: ⚠️ Skipped (already exists): F1
+[2025-07-04T20:02:33.261Z] info: ⚠️ Skipped (already exists): Sinners
+[2025-07-04T20:02:33.377Z] info: ⚠️ Skipped (already exists): Superman
+[2025-07-04T20:02:33.501Z] info: ⚠️ Skipped (already exists): The Old Guard
+[2025-07-04T20:02:33.630Z] info: ⚠️ Skipped (already exists): Ice Road: Vengeance
+[2025-07-04T20:02:33.753Z] info: ⚠️ Skipped (already exists): The Fantastic Four: First Steps
+[2025-07-04T20:02:33.879Z] info: ⚠️ Skipped (already exists): 28 Years Later
+[2025-07-04T20:02:34.009Z] info: ⚠️ Skipped (already exists): Guns Up
+[2025-07-04T20:02:34.142Z] info: ⚠️ Skipped (already exists): xXx
+[2025-07-04T20:02:34.281Z] info: ⚠️ Skipped (already exists): M3GAN 2.0
+[2025-07-04T20:02:34.404Z] info: ⚠️ Skipped (already exists): KPop Demon Hunters
+[2025-07-04T20:02:34.545Z] info: ⚠️ Skipped (already exists): Final Destination Bloodlines
+[2025-07-04T20:02:34.665Z] info: ⚠️ Skipped (already exists): Lilo & Stitch
+[2025-07-04T20:03:12.308Z] info: ⚠️ Skipped (already exists): Bring Her Back
+[2025-07-04T20:03:12.456Z] info: ⚠️ Skipped (already exists): The Ritual
+[2025-07-04T20:03:12.616Z] info: ⚠️ Skipped (already exists): M3GAN 2.0
+[2025-07-04T20:03:12.793Z] info: ⚠️ Skipped (already exists): Superman
+[2025-07-04T20:03:13.025Z] info: ⚠️ Skipped (already exists): Elio
+[2025-07-04T20:03:13.159Z] info: ⚠️ Skipped (already exists): Sonic the Hedgehog 3
+[2025-07-04T20:03:13.322Z] info: ⚠️ Skipped (already exists): Shadow Force
+[2025-07-04T20:03:13.504Z] info: ⚠️ Skipped (already exists): Karate Kid: Legends
+[2025-07-04T20:03:13.680Z] info: ⚠️ Skipped (already exists): given the Movie: To the Sea
+[2025-07-04T20:03:14.217Z] info: ⚠️ Skipped (already exists): The Fantastic Four: First Steps
+[2025-07-04T20:03:14.359Z] info: ⚠️ Skipped (already exists): The Ugly Stepsister
+[2025-07-04T20:03:14.490Z] info: ⚠️ Skipped (already exists): Bambi: A Life in the Woods
+[2025-07-04T20:03:14.642Z] info: ⚠️ Skipped (already exists): Daniela Forever
+[2025-07-04T20:03:14.805Z] info: ⚠️ Skipped (already exists): The Shrouds
+[2025-07-04T20:03:14.967Z] info: ⚠️ Skipped (already exists): The Legend of Ochi
+[2025-07-04T20:03:15.123Z] info: ⚠️ Skipped (already exists): Demon Slayer: Kimetsu no Yaiba Infinity Castle
+[2025-07-04T20:03:15.260Z] info: ⚠️ Skipped (already exists): Guns Up
+[2025-07-04T20:03:15.403Z] info: ⚠️ Skipped (already exists): Tornado
+[2025-07-04T20:03:15.556Z] info: ⚠️ Skipped (already exists): The Garfield Movie
+[2025-07-04T20:03:15.723Z] info: ⚠️ Skipped (already exists): Smurfs
+[2025-07-04T20:15:46.390Z] info: Server started on port 5000
+[2025-07-04T20:16:18.572Z] error: MongoDB error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+[2025-07-04T20:17:05.377Z] info: Server started on port 5000
+[2025-07-04T20:17:09.426Z] info: MongoDB connected
+[2025-07-04T20:17:52.549Z] info: ⚠️ Skipped (already exists): Bring Her Back
+[2025-07-04T20:17:52.730Z] info: ⚠️ Skipped (already exists): The Ritual
+[2025-07-04T20:17:52.929Z] info: ⚠️ Skipped (already exists): M3GAN 2.0
+[2025-07-04T20:17:53.122Z] info: ⚠️ Skipped (already exists): Superman
+[2025-07-04T20:17:53.310Z] info: ⚠️ Skipped (already exists): Elio
+[2025-07-04T20:17:53.505Z] info: ⚠️ Skipped (already exists): Sonic the Hedgehog 3
+[2025-07-04T20:17:53.690Z] info: ⚠️ Skipped (already exists): Shadow Force
+[2025-07-04T20:17:53.892Z] info: ⚠️ Skipped (already exists): Karate Kid: Legends
+[2025-07-04T20:17:54.080Z] info: ⚠️ Skipped (already exists): given the Movie: To the Sea
+[2025-07-04T20:17:54.276Z] info: ⚠️ Skipped (already exists): The Fantastic Four: First Steps
+[2025-07-04T20:17:54.457Z] info: ⚠️ Skipped (already exists): The Ugly Stepsister
+[2025-07-04T20:17:54.639Z] info: ⚠️ Skipped (already exists): Bambi: A Life in the Woods
+[2025-07-04T20:17:54.839Z] info: ⚠️ Skipped (already exists): Daniela Forever
+[2025-07-04T20:17:55.021Z] info: ⚠️ Skipped (already exists): The Shrouds
+[2025-07-04T20:17:55.204Z] info: ⚠️ Skipped (already exists): The Legend of Ochi
+[2025-07-04T20:17:55.395Z] info: ⚠️ Skipped (already exists): Demon Slayer: Kimetsu no Yaiba Infinity Castle
+[2025-07-04T20:17:55.574Z] info: ⚠️ Skipped (already exists): Guns Up
+[2025-07-04T20:17:55.760Z] info: ⚠️ Skipped (already exists): Tornado
+[2025-07-04T20:17:55.956Z] info: ⚠️ Skipped (already exists): The Garfield Movie
+[2025-07-04T20:17:56.142Z] info: ⚠️ Skipped (already exists): Smurfs
+[2025-07-04T20:22:10.962Z] info: Server started on port 5000
+[2025-07-04T20:22:14.474Z] info: MongoDB connected
+[2025-07-04T20:25:44.035Z] info: Server started on port 5000
+[2025-07-04T20:25:50.414Z] info: MongoDB connected
+[2025-07-04T20:26:24.458Z] info: ⚠️ Skipped (already exists): The Old Guard 2
+[2025-07-04T20:26:24.660Z] info: ⚠️ Skipped (already exists): Thunderbolts*
+[2025-07-04T20:26:24.852Z] info: ⚠️ Skipped (already exists): Heads of State
+[2025-07-04T20:26:25.041Z] info: ⚠️ Skipped (already exists): Ballerina
+[2025-07-04T20:26:25.243Z] info: ⚠️ Skipped (already exists): Jurassic World Rebirth
+[2025-07-04T20:26:25.429Z] info: ⚠️ Skipped (already exists): Dora and the Search for Sol Dorado
+[2025-07-04T20:26:25.630Z] info: ⚠️ Skipped (already exists): Bring Her Back
+[2025-07-04T20:26:25.823Z] info: ⚠️ Skipped (already exists): F1
+[2025-07-04T20:26:26.019Z] info: ⚠️ Skipped (already exists): Sinners
+[2025-07-04T20:26:27.588Z] info: ⚠️ Skipped (already exists): Superman
+[2025-07-04T20:26:27.785Z] info: ⚠️ Skipped (already exists): The Old Guard
+[2025-07-04T20:26:27.980Z] info: ⚠️ Skipped (already exists): Ice Road: Vengeance
+[2025-07-04T20:26:28.177Z] info: ⚠️ Skipped (already exists): The Fantastic Four: First Steps
+[2025-07-04T20:26:28.378Z] info: ⚠️ Skipped (already exists): 28 Years Later
+[2025-07-04T20:26:28.586Z] info: ⚠️ Skipped (already exists): xXx
+[2025-07-04T20:26:30.206Z] info: ⚠️ Skipped (already exists): M3GAN 2.0
+[2025-07-04T20:26:30.493Z] info: ⚠️ Skipped (already exists): Guns Up
+[2025-07-04T20:26:32.154Z] info: ⚠️ Skipped (already exists): Final Destination Bloodlines
+[2025-07-04T20:26:32.339Z] info: ⚠️ Skipped (already exists): KPop Demon Hunters
+[2025-07-04T20:26:32.551Z] info: ⚠️ Skipped (already exists): Lilo & Stitch
+[2025-07-04T20:26:37.573Z] info: ⚠️ Skipped (already exists): The Old Guard 2
+[2025-07-04T20:26:37.772Z] info: ⚠️ Skipped (already exists): Thunderbolts*
+[2025-07-04T20:26:37.958Z] info: ⚠️ Skipped (already exists): Heads of State
+[2025-07-04T20:26:38.154Z] info: ⚠️ Skipped (already exists): Ballerina
+[2025-07-04T20:26:38.346Z] info: ⚠️ Skipped (already exists): Jurassic World Rebirth
+[2025-07-04T20:26:38.540Z] info: ⚠️ Skipped (already exists): Dora and the Search for Sol Dorado
+[2025-07-04T20:26:38.742Z] info: ⚠️ Skipped (already exists): Bring Her Back
+[2025-07-04T20:26:38.926Z] info: ⚠️ Skipped (already exists): F1
+[2025-07-04T20:26:39.119Z] info: ⚠️ Skipped (already exists): Sinners
+[2025-07-04T20:26:41.336Z] info: ⚠️ Skipped (already exists): Superman
+[2025-07-04T20:26:41.521Z] info: ⚠️ Skipped (already exists): The Old Guard
+[2025-07-04T20:26:41.719Z] info: ⚠️ Skipped (already exists): Ice Road: Vengeance
+[2025-07-04T20:26:41.904Z] info: ⚠️ Skipped (already exists): The Fantastic Four: First Steps
+[2025-07-04T20:26:42.105Z] info: ⚠️ Skipped (already exists): 28 Years Later
+[2025-07-04T20:26:42.295Z] info: ⚠️ Skipped (already exists): xXx
+[2025-07-04T20:26:42.476Z] info: ⚠️ Skipped (already exists): M3GAN 2.0
+[2025-07-04T20:26:42.953Z] info: ⚠️ Skipped (already exists): Guns Up
+[2025-07-04T20:26:43.144Z] info: ⚠️ Skipped (already exists): Final Destination Bloodlines
+[2025-07-04T20:26:43.338Z] info: ⚠️ Skipped (already exists): KPop Demon Hunters
+[2025-07-04T20:26:43.525Z] info: ⚠️ Skipped (already exists): Lilo & Stitch
+[2025-07-04T20:26:57.577Z] info: ⚠️ Skipped (already exists): Bring Her Back
+[2025-07-04T20:26:57.774Z] info: ⚠️ Skipped (already exists): The Ritual
+[2025-07-04T20:26:57.969Z] info: ⚠️ Skipped (already exists): M3GAN 2.0
+[2025-07-04T20:26:58.154Z] info: ⚠️ Skipped (already exists): Superman
+[2025-07-04T20:26:58.350Z] info: ⚠️ Skipped (already exists): Elio
+[2025-07-04T20:26:58.550Z] info: ⚠️ Skipped (already exists): Sonic the Hedgehog 3
+[2025-07-04T20:26:58.750Z] info: ⚠️ Skipped (already exists): Shadow Force
+[2025-07-04T20:26:58.950Z] info: ⚠️ Skipped (already exists): Karate Kid: Legends
+[2025-07-04T20:26:59.150Z] info: ⚠️ Skipped (already exists): given the Movie: To the Sea
+[2025-07-04T20:26:59.355Z] info: ⚠️ Skipped (already exists): The Fantastic Four: First Steps
+[2025-07-04T20:26:59.547Z] info: ⚠️ Skipped (already exists): The Ugly Stepsister
+[2025-07-04T20:26:59.751Z] info: ⚠️ Skipped (already exists): Bambi: A Life in the Woods
+[2025-07-04T20:26:59.936Z] info: ⚠️ Skipped (already exists): Daniela Forever
+[2025-07-04T20:27:00.134Z] info: ⚠️ Skipped (already exists): The Shrouds
+[2025-07-04T20:27:00.334Z] info: ⚠️ Skipped (already exists): The Legend of Ochi
+[2025-07-04T20:27:00.523Z] info: ⚠️ Skipped (already exists): Demon Slayer: Kimetsu no Yaiba Infinity Castle
+[2025-07-04T20:27:00.717Z] info: ⚠️ Skipped (already exists): Guns Up
+[2025-07-04T20:27:00.906Z] info: ⚠️ Skipped (already exists): Tornado
+[2025-07-04T20:27:01.102Z] info: ⚠️ Skipped (already exists): The Garfield Movie
+[2025-07-04T20:27:01.301Z] info: ⚠️ Skipped (already exists): Smurfs
+[2025-07-04T20:27:50.815Z] info: Server started on port 5000
+[2025-07-04T20:27:54.492Z] info: MongoDB connected
+[2025-07-04T20:28:57.012Z] info: Server started on port 5000
+[2025-07-04T20:29:04.822Z] info: MongoDB connected
+[2025-07-04T20:29:18.412Z] info: ⚠️ Skipped (already exists): Bring Her Back
+[2025-07-04T20:29:18.666Z] info: ⚠️ Skipped (already exists): The Ritual
+[2025-07-04T20:29:18.856Z] info: ⚠️ Skipped (already exists): M3GAN 2.0
+[2025-07-04T20:29:19.073Z] info: ⚠️ Skipped (already exists): Superman
+[2025-07-04T20:29:19.275Z] info: ⚠️ Skipped (already exists): Elio
+[2025-07-04T20:29:19.467Z] info: ⚠️ Skipped (already exists): Sonic the Hedgehog 3
+[2025-07-04T20:29:19.670Z] info: ⚠️ Skipped (already exists): Shadow Force
+[2025-07-04T20:29:19.984Z] info: ⚠️ Skipped (already exists): Karate Kid: Legends
+[2025-07-04T20:29:20.199Z] info: ⚠️ Skipped (already exists): given the Movie: To the Sea
+[2025-07-04T20:29:20.408Z] info: ⚠️ Skipped (already exists): The Fantastic Four: First Steps
+[2025-07-04T20:29:20.630Z] info: ⚠️ Skipped (already exists): The Ugly Stepsister
+[2025-07-04T20:29:20.851Z] info: ⚠️ Skipped (already exists): Bambi: A Life in the Woods
+[2025-07-04T20:29:21.083Z] info: ⚠️ Skipped (already exists): Daniela Forever
+[2025-07-04T20:29:21.313Z] info: ⚠️ Skipped (already exists): The Shrouds
+[2025-07-04T20:29:21.641Z] info: ⚠️ Skipped (already exists): The Legend of Ochi
+[2025-07-04T20:29:21.848Z] info: ⚠️ Skipped (already exists): Demon Slayer: Kimetsu no Yaiba Infinity Castle
+[2025-07-04T20:29:22.043Z] info: ⚠️ Skipped (already exists): Guns Up
+[2025-07-04T20:29:22.253Z] info: ⚠️ Skipped (already exists): Tornado
+[2025-07-04T20:29:22.455Z] info: ⚠️ Skipped (already exists): The Garfield Movie
+[2025-07-04T20:29:22.655Z] info: ⚠️ Skipped (already exists): Smurfs
+[2025-07-04T20:42:17.118Z] info: Server started on port 5000
+[2025-07-04T20:42:21.520Z] info: MongoDB connected
+[2025-07-05T20:53:36.066Z] info: Server started on port 5000
+[2025-07-05T20:53:44.828Z] info: MongoDB connected
+[2025-07-06T08:46:36.783Z] info: Server started on port 5000
+[2025-07-06T08:47:07.051Z] error: MongoDB error: 543E0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:1605:SSL alert number 80
+
+[2025-07-06T08:48:46.288Z] info: Server started on port 5000
+[2025-07-06T08:49:19.861Z] error: MongoDB error: BC410000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:1605:SSL alert number 80
+
+[2025-07-06T08:56:05.257Z] info: Server started on port 5000
+[2025-07-06T08:56:38.801Z] error: MongoDB error: 40400000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:1605:SSL alert number 80
+

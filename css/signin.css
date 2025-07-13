@@ -1,0 +1,227 @@
+body {
+  background: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.85) 8%,
+      rgba(0, 0, 0, 0.8465) 15.67%,
+      rgba(0, 0, 0, 0.8361) 23.33%,
+      rgba(0, 0, 0, 0.8187) 31%,
+      rgba(0, 0, 0, 0.7944) 38.67%,
+      rgba(0, 0, 0, 0.7632) 46.33%,
+      rgba(0, 0, 0, 0.725) 54%,
+      rgba(0, 0, 0, 0.6868) 61.67%,
+      rgba(0, 0, 0, 0.6556) 69.33%,
+      rgba(0, 0, 0, 0.6312) 77%,
+      rgba(0, 0, 0, 0.6139) 84.67%,
+      rgba(0, 0, 0, 0.6035) 92.33%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url('/images/ChatGPT\ Image\ Jun\ 29\,\ 2025\,\ 01_47_10\ AM.png') no-repeat
+      center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.logo {
+  width: 100%;
+  padding: 1.5rem;
+  max-width: 1200px;
+}
+
+.logo img {
+  height: 45px;
+}
+
+.login-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  color: #fff;
+  /* height: 100px; */
+  opacity: 0.8;
+}
+
+.login-container h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  padding-left: 50px;
+  font-stretch: none;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: transparent;
+  /* display: block; */
+}
+
+.btn {
+  width: 100%;
+  background-color: red;
+  color: #fff;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn-sign-in {
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.4);
+  color: #fff;
+  font-weight: 500;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+
+  cursor: pointer;
+  margin-top: 1rem;
+  opacity: 0.9;
+  border-style: solid;
+  inset: 0px;
+  border-width: 0.0625rem;
+  border-radius: calc(0.1875rem);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.or-divider {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.checkbox-group input {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+}
+
+.small-text {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+
+  display: inline-block;
+}
+
+.small-text a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.form-group.form-forgot-container {
+  text-align: center;
+}
+
+.content--mal {
+  display: block;
+  margin-left: 50px;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 1rem;
+    justify-content: flex-start;
+  }
+
+  .login-container {
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 0;
+    opacity: 0.95;
+  }
+
+  .login-container h2 {
+    font-size: 2rem;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .form-group input {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .btn,
+  .btn-sign-in {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .checkbox-group {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .small-text {
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .content--mal {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  .logo {
+    padding: 0.5rem;
+    max-width: 100%;
+  }
+
+  .logo img {
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* Medium query for  641px to 1024px */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .login-container {
+    max-width: 400px;
+    padding: 1.5rem;
+  }
+
+  .login-container h2 {
+    font-size: 2.2rem;
+    padding-left: 20px;
+  }
+
+  .form-group input {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .btn,
+  .btn-sign-in {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .content--mal {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+}

