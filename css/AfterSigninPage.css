@@ -664,7 +664,7 @@ html {
 @media screen and (max-width: 768px) {
   .search-input-movies_T_Shows {
     width: 300px;
-    /* max-width: 330px; */
+    height: fit-content;
   }
 
   .search-input-movies_T_Shows i {
@@ -683,17 +683,10 @@ html {
 
 @media screen and (max-width: 480px) {
   .search-input-movies_T_Shows {
-    max-width: 70%;
-    width: 100px;
-    flex-direction: column;
-    align-items: flex-start;
+    display: none;
   }
 
   .search-input-movies_T_Shows i {
     margin-bottom: 5px;
   }
-
-  /* .search-input-movies_T_Shows input {
-    width: 100%;
-  } */
 }
