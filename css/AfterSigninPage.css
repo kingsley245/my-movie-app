@@ -664,19 +664,19 @@ html {
 @media screen and (max-width: 768px) {
   .search-input-movies_T_Shows {
     width: 300px;
-    height: fit-content;
+    height: 30px;
   }
 
   .search-input-movies_T_Shows i {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .search-input-movies_T_Shows input {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .logo__menu-join img {
-    height: 20px;
+    height: 18px;
     width: auto;
   }
 }
