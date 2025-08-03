@@ -682,9 +682,9 @@ html {
 }
 
 @media screen and (max-width: 480px) {
-  .search-input-movies_T_Shows {
+  /* .search-input-movies_T_Shows {
     display: none;
-  }
+  } */
 
   .search-input-movies_T_Shows i {
     margin-bottom: 5px;
