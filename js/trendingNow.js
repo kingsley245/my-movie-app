@@ -19,30 +19,30 @@ async function fetchAPIData(endpoint) {
   return data;
 }
 
-const container = document.getElementById('trendingContainer');
-const scrollLeftBtn = document.getElementById('scrollLeft');
-const scrollRightBtn = document.getElementById('scrollRight');
+// const container = document.getElementById('trendingContainer');
+// const scrollLeftBtn = document.getElementById('scrollLeft');
+// const scrollRightBtn = document.getElementById('scrollRight');
 
-const updateArrows = () => {
-  const maxScrollLeft = container.scrollWidth - container.clientWidth;
-  scrollLeftBtn.style.display = container.scrollLeft > 0 ? 'block' : 'none';
-  scrollRightBtn.style.display =
-    container.scrollLeft < maxScrollLeft - 10 ? 'block' : 'none';
-};
+// const updateArrows = () => {
+//   const maxScrollLeft = container.scrollWidth - container.clientWidth;
+//   scrollLeftBtn.style.display = container.scrollLeft > 0 ? 'block' : 'none';
+//   scrollRightBtn.style.display =
+//     container.scrollLeft < maxScrollLeft - 10 ? 'block' : 'none';
+// };
 
-scrollLeftBtn.addEventListener('click', () => {
-  container.scrollBy({
-    left: -container.clientWidth,
-    behavior: 'smooth'
-  });
-});
+// scrollLeftBtn.addEventListener('click', () => {
+//   container.scrollBy({
+//     left: -container.clientWidth,
+//     behavior: 'smooth'
+//   });
+// });
 
-scrollRightBtn.addEventListener('click', () => {
-  container.scrollBy({ left: container.clientWidth, behavior: 'smooth' });
-});
+// scrollRightBtn.addEventListener('click', () => {
+//   container.scrollBy({ left: container.clientWidth, behavior: 'smooth' });
+// });
 
-container.addEventListener('scroll', updateArrows);
-window.addEventListener('load', updateArrows);
+// container.addEventListener('scroll', updateArrows);
+// window.addEventListener('load', updateArrows);
 
 // Trending movies
 function showTrendingDetails(movie) {

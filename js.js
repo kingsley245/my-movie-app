@@ -85,8 +85,6 @@
 //   document.body.appendChild(script);
 // }
 
-// cooking beans is good for js in the realm of the spirit
-
 const links = document.querySelectorAll('.sidebar-list-item-l');
 
 const scriptMap = {
@@ -120,7 +118,7 @@ function loadContent(pageKey) {
     .then((html) => {
       document.getElementById('homeContent').innerHTML = html;
 
-      // Load JS for that page
+      // Load JS for page half content
       if (scriptMap[pageKey]) {
         loadScript(scriptMap[pageKey]);
       }
@@ -161,3 +159,12 @@ function loadScript(filepath) {
   script.defer = true;
   document.body.appendChild(script);
 }
+
+const searchForm = document.getElementById('search-form');
+const searchInput = document.getElementById('search');
+
+searchInput.addEventListener('keydown', (e) => {
+  if (e.key === 'enter') {
+    e.preventDefault();
+  }
+});

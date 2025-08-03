@@ -83,8 +83,8 @@ html {
 }
 
 /* for device center query */
-.search-center-justify {
-  display: flex;
+/* .search-center-justify {
+  display: none;
   align-items: center;
   background-color: var(--color-gray);
   padding: 0.6rem 1rem;
@@ -96,8 +96,8 @@ html {
   margin: 5px auto 0 auto;
   justify-content: center;
 
-  display: none;
-}
+  /* display: none; 
+}*/
 
 .search-center-justify i {
   color: #999;
@@ -585,14 +585,6 @@ html {
   width: 100%;
   border-radius: 8px;
 }
-
-/* .movie-rating,
-.movie-title {
-  margin-top: 5px;
-  font-size: 14px;
-  color: #fff;
-  text-align: center;
-} */
 
 .scroll-wrapper {
   position: relative;
