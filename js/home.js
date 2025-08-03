@@ -141,7 +141,7 @@ async function fetchNollyWoodTrailer() {
 
     popularResult.forEach((movie) => {
       const title =
-        movie.title.length > 30
+        movie.title.length > 10
           ? movie.title.slice(0, 30) + '...'
           : movie.title;
       const rating = movie.vote_average.toFixed(1); // Rounded to 1 decimal
@@ -193,10 +193,6 @@ async function fetchNollywoodMovies() {
         }</div>
       `;
 
-      // card.onclick = () => {
-      //   window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank');
-      // };
-
       wrapper.appendChild(card);
     });
   } catch (error) {
@@ -243,7 +239,6 @@ async function fetchTrendingComediesNigeria() {
 }
 
 async function fetchTrendingNigerianCartoons() {
-  // const apiKey = 'AIzaSyDU7Jw10AykEQgzsGMkZwA8h7TC0ewl9vI';
   const query = 'Trending Nigerian Cartoons for kids 2025';
   const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoEmbeddable=true&maxResults=6&q=${encodeURIComponent(
     query

@@ -295,7 +295,7 @@ html {
 }
 
 .sidebar__list-item {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -359,7 +359,7 @@ html {
 /* Main content */
 .trending-section {
   margin-left: 250px;
-  padding: 2rem;
+  padding: 1.5rem;
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
@@ -368,11 +368,12 @@ html {
 }
 
 .trending-header {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   margin-bottom: 1.5rem;
   color: var(--color-white);
   flex-shrink: 0;
+  margin-left: 60px;
 }
 
 /* Scroll container */
@@ -380,7 +381,7 @@ html {
   overflow-x: auto;
   white-space: nowrap;
   padding-bottom: 10px;
-  padding: 20px;
+  padding: 10px;
   scroll-behavior: smooth;
   position: relative;
 }
@@ -392,23 +393,19 @@ html {
 .trending-cards-wrapper {
   display: flex;
   gap: 1em;
-  /* align-items: flex-start; */
 }
 
 .movie-card {
   position: relative;
   min-width: 200px;
-  height: 300px;
+  height: 320px;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
-  background-color: #222;
   transition: transform 0.3s ease;
   display: flex;
-  /* flex-direction: column; 
-  */
   flex: 0 0 auto;
   color: white;
   text-align: center;
@@ -417,7 +414,6 @@ html {
 .movie-card:hover {
   transform: scale(1.03);
   opacity: 0.9;
-  /* box-shadow: 0 4px 15px rgba(229, 9, 20, 0.8); */
 }
 
 .movie-rating {
@@ -429,27 +425,26 @@ html {
   padding: 0.3rem 0.6rem;
   border-radius: 10px;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.6rem;
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  /* user-select: none; */
   margin-top: 30px;
 }
 
 .movie-rating i {
-  color: gold;
+  color: rgb(255, 255, 255);
 }
 
 .movie-title {
   text-align: center;
   font-size: 12px;
+  font-weight: 600;
   margin-top: 0.4rem;
   color: white;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* background: var(--color-dark); */
   position: relative;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -548,7 +543,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin: 6px;
   width: 180px;
 }
 
@@ -572,11 +567,6 @@ html {
   scroll-behavior: smooth;
   white-space: nowrap;
   padding: 1rem 0;
-}
-
-.trending-cards-wrapper {
-  display: flex;
-  gap: 1rem;
 }
 
 .scroll-arrow {
@@ -682,11 +672,38 @@ html {
 }
 
 @media screen and (max-width: 480px) {
-  /* .search-input-movies_T_Shows {
-    display: none;
-  } */
-
   .search-input-movies_T_Shows i {
     margin-bottom: 5px;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  .movie-card {
+    min-width: calc(100% / 5);
+  }
+} */
+
+/* Media Queries for smaller screens */
+@media (max-width: 1200px) {
+  .movie-card {
+    width: 20%; /* 5 cards fit into the container */
+  }
+}
+
+@media (max-width: 800px) {
+  .movie-card {
+    width: 33.33%; /* 3 cards fit into the container */
+  }
+}
+
+@media (max-width: 500px) {
+  .movie-card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 350px) {
+  .movie-card {
+    width: 100%; /* 1 card per row */
   }
 }
