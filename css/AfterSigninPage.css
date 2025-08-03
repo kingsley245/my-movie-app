@@ -663,7 +663,7 @@ html {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .search-input-movies_T_Shows {
-    width: 300px;
+    width: 250px;
     height: 30px;
   }
 
