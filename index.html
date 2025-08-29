@@ -29,11 +29,36 @@
     <title>The Movie TMDB</title>
   </head>
   <body>
-    <nav class="navbar__section-netflix-container-first">
+    <nav class="navbar">
+      <div class="navbar-left">
+        <i class="fas fa-bars menu-toggle" id="menuToggle"></i>
+        <div class="logo">
+          <img src="/images/netflix-3.svg" alt="Netflix logo" />
+        </div>
+      </div>
+
+      <form class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search Movies / TV shows" />
+      </form>
+
+      <div class="navbar-right">
+        <div class="download-app">
+          <i class="fas fa-download"></i>
+          <a href="#">Download App</a>
+        </div>
+        <div class="watch-history">
+          <i class="fas fa-history"></i>
+          <a href="#">Watch History</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <nav class="navbar__section-netflix-container-first">
       <div class="navbar__display-container">
         <div class="navbar-menu no-shrink" style="flex-shrink: 0">
           <i
-            class="fas fa-bars fa-2x text-white menu-toggl cursor-pointer"
+            class="fas fa-bars fa-2x text-black menu-toggl cursor-pointer"
             id="menuToggle"
           ></i>
           <div class="logo__menu-join">
@@ -59,8 +84,8 @@
           </div>
         </div>
       </div>
-    </nav>
-    <!-- Sidebar Navigation -->
+    </nav> -->
+
     <div class="sidebar-overlay hidden" id="sidebarOverlay"></div>
 
     <aside class="sidebar-menu" id="sidebarMenu">
@@ -73,17 +98,6 @@
         <li><i class="fas fa-book"></i> <a href="#">Search</a></li>
       </ul>
     </aside>
-    <!-- <div class="after-On-device-small">
-      <div class="search-center-justify">
-        <i class="fas fa-search"></i>
-        <input
-          type="text"
-          name="search"
-          id="search"
-          placeholder="Search Movies/ TV shows"
-        />
-      </div>
-    </div> -->
 
     <div class="sidebar-larger-screen__container">
       <div class="side__bar-container-list">
