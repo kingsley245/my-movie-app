@@ -86,18 +86,29 @@
       </div>
     </nav> -->
 
-    <div class="sidebar-overlay hidden" id="sidebarOverlay"></div>
-
-    <aside class="sidebar-menu" id="sidebarMenu">
-      <ul class="sidebar-links">
-        <li><i class="fas fa-home"></i><a href="/home.html">Home</a></li>
-        <li><i class="fas fa-tv"></i><a href="#">Tv Shows</a></li>
-        <li><i class="fas fa-film"></i><a href="#">Movie</a></li>
-        <li><i class="fas fa-dragon"></i> <a href="#">Trending</a></li>
-        <li><i class="fas fa-futbol"></i> <a href="#">Tv series</a></li>
-        <li><i class="fas fa-book"></i> <a href="#">Search</a></li>
-      </ul>
-    </aside>
+    <div class="toggleOPtion_mobile" id="side_BAR">
+      <div class="mobile_menu_listItem">
+        <div class="mobile_menu_items">
+          <ul class="mobile_list_item">
+            <li class="mobile_link">
+              <a href="#">Home</a>
+            </li>
+            <li class="mobile_link">
+              <a href="#">TV show</a>
+            </li>
+            <li class="mobile_link">
+              <a href="#">Movie</a>
+            </li>
+            <li class="mobile_link">
+              <a href="#">Trending</a>
+            </li>
+            <li class="mobile_link">
+              <a href="#">TV series</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <div class="sidebar-larger-screen__container">
       <div class="side__bar-container-list">
@@ -157,24 +168,6 @@
     </div>
 
     <main class="trending-section" id="homeContent"></main>
-
-    <script>
-      const menuToggle = document.getElementById('menuToggle');
-      const sidebarMenu = document.getElementById('sidebarMenu');
-      const sidebarOverlay = document.getElementById('sidebarOverlay');
-
-      menuToggle.addEventListener('click', () => {
-        sidebarMenu.classList.add('show');
-        sidebarMenu.classList.remove('hidden');
-        sidebarOverlay.classList.remove('hidden');
-      });
-
-      sidebarOverlay.addEventListener('click', () => {
-        sidebarMenu.classList.remove('show');
-        sidebarMenu.classList.add('hidden');
-        sidebarOverlay.classList.add('hidden');
-      });
-    </script>
 
     <footer class="after-side-card">
       <div class="content-paragraph">

@@ -160,11 +160,40 @@ function loadScript(filepath) {
   document.body.appendChild(script);
 }
 
-const searchForm = document.getElementById('search-form');
-const searchInput = document.getElementById('search');
+// const searchForm = document.getElementById('search-form');
+// const searchInput = document.getElementById('search');
 
-searchInput.addEventListener('keydown', (e) => {
-  if (e.key === 'enter') {
-    e.preventDefault();
+// searchInput.addEventListener('keydown', (e) => {
+//   if (e.key === 'enter') {
+//     e.preventDefault();
+//   }
+// });
+
+//  menu click menu
+const menuToggle = document.getElementById('menuToggle');
+const sidebar = document.getElementById('side_BAR');
+const sideOverLay = document.createElement('div');
+sideOverLay.className = 'side_overlay';
+document.body.appendChild(sideOverLay);
+console.log(menuToggle);
+console.log(sidebar);
+console.log(sideOverLay);
+
+menuToggle.addEventListener('click', () => {
+  sideOverLay.classList.add('active');
+  sidebar.classList.add('active');
+});
+
+sideOverLay.addEventListener('click', () => {
+  sideOverLay.classList.remove('active');
+  sidebar.classList.remove('active');
+});
+
+// Close when resizing to desktop
+const BREAKPOINT = 768; // adjust this to your design breakpoint
+window.addEventListener('resize', () => {
+  if (window.innerWidth > BREAKPOINT) {
+    sidebar.classList.remove('active');
+    sideOverLay.classList.remove('active');
   }
 });
