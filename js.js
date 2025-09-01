@@ -85,7 +85,12 @@
 //   document.body.appendChild(script);
 // }
 
-const links = document.querySelectorAll('.sidebar-list-item-l');
+const links = [
+  ...document.querySelectorAll('.sidebar-list-item-l'),
+  ...(document.getElementById('ToggleMenu')
+    ? [document.getElementById('ToggleMenu')]
+    : [])
+];
 
 const scriptMap = {
   tv: 'js/tv.js',
@@ -108,6 +113,7 @@ function loadContent(pageKey) {
     return a && a.getAttribute('href') === `#${pageKey}`;
   });
   if (targetLi) targetLi.classList.add('active');
+  console.log(links);
 
   // Load HTML
   fetch(file)
@@ -175,9 +181,6 @@ const sidebar = document.getElementById('side_BAR');
 const sideOverLay = document.createElement('div');
 sideOverLay.className = 'side_overlay';
 document.body.appendChild(sideOverLay);
-console.log(menuToggle);
-console.log(sidebar);
-console.log(sideOverLay);
 
 menuToggle.addEventListener('click', () => {
   sideOverLay.classList.add('active');
@@ -196,4 +199,30 @@ window.addEventListener('resize', () => {
     sidebar.classList.remove('active');
     sideOverLay.classList.remove('active');
   }
+});
+
+document.querySelectorAll('.mobile_link a').forEach((link) => {
+  link.addEventListener('click', () => {
+    sidebar.classList.remove('active');
+    sideOverLay.classList.remove('active');
+  });
+});
+
+const AllLinks = document.querySelectorAll(
+  '.side-list-item-l a, .mobile_link a'
+);
+AllLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    const current = link.dataset.link;
+
+    // removing all active for all
+    AllLinks.forEach((li) => li.parentElement.classList.remove('active'));
+
+    // add active to both sidebar and mobile link that share the same data-set-link
+    document
+      .querySelectorAll(`[data-link="${current}"]`)
+      .forEach((matchingValue) => {
+        matchingValue.parentElement.classList.add('active');
+      });
+  });
 });

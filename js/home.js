@@ -78,17 +78,42 @@ fetchtest();
 //   }
 // }
 
-// const scrollContainer = document.querySelector('.scroll-container');
-// const scrollLeftButton = document.querySelector('.scroll-left');
-// const scrollRightButton = document.querySelector('.scroll-right');
-// const scrollAmount = 5;
+// === Netflix-style horizontal scroll ===
 
-const scrollContainer = document.querySelector('.scroll-container');
+// Get container and arrows
+const scrollContainer = document.getElementById('scroll_container-movie');
 const btnLeft = document.querySelector('.scroll-left');
 const btnRight = document.querySelector('.scroll-right');
 
+// How much to scroll per click (adjust this to match card width + gap)
 const scrollAmount = 300;
 
+// Check arrow visibility
+function updateArrows() {
+  const scrollLeft = scrollContainer.scrollLeft;
+  const scrollWidth = scrollContainer.scrollWidth;
+  const clientWidth = scrollContainer.clientWidth;
+
+  // Hide left arrow if at start
+  if (scrollLeft <= 0) {
+    btnLeft.classList.add('hidden');
+  } else {
+    btnLeft.classList.remove('hidden');
+  }
+
+  // Hide right arrow if at end
+  if (scrollLeft + clientWidth >= scrollWidth - 1) {
+    btnRight.classList.add('hidden');
+  } else {
+    btnRight.classList.remove('hidden');
+  }
+}
+
+// Run when page loads and when user scrolls
+window.addEventListener('load', updateArrows);
+scrollContainer.addEventListener('scroll', updateArrows);
+
+// Left button scroll
 btnLeft.addEventListener('click', () => {
   scrollContainer.scrollBy({
     left: -scrollAmount,
@@ -96,6 +121,7 @@ btnLeft.addEventListener('click', () => {
   });
 });
 
+// Right button scroll
 btnRight.addEventListener('click', () => {
   scrollContainer.scrollBy({
     left: scrollAmount,
@@ -103,34 +129,6 @@ btnRight.addEventListener('click', () => {
   });
 });
 
-const scrollContainerScroll = document.querySelector('.scroll-container');
-const btnLeftScroll = document.querySelector('.scroll-left');
-const btnRightScroll = document.querySelector('.scroll-right');
-
-console.log('scrollContainerScroll:', scrollContainerScroll);
-console.log('btnLeftScroll:', btnLeftScroll);
-console.log('btnRightScroll:', btnRightScroll);
-
-function checkingArrow() {
-  const scrollLeft = scrollContainerScroll.scrollLeft;
-  const scrollWidth = scrollContainerScroll.scrollWidth;
-  const clientWidth = scrollContainerScroll.clientWidth;
-
-  if (scrollLeft <= 0) {
-    btnLeftScroll.classList.add('hidden');
-  } else {
-    btnLeftScroll.classList.remove('hidden');
-  }
-
-  if (scrollLeft + clientWidth >= scrollWidth - 1) {
-    btnRightScroll.classList.add('hidden');
-  } else {
-    btnRightScroll.classList.remove('hidden');
-  }
-}
-
-window.addEventListener('load', checkingArrow);
-scrollContainerScroll.addEventListener('scroll', checkingArrow);
 async function fetchNollyWoodTrailer() {
   try {
     const response = await fetchAPIData('movie/upcoming');

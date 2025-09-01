@@ -195,7 +195,8 @@ html {
   opacity: 0.99;
 }
 
-.sidebar-list-item-l.active {
+.sidebar-list-item-l.active,
+#ToggleMenu.active {
   border-color: 1px solid white;
 
   background: #8d8484;
@@ -538,10 +539,10 @@ html {
 /* toggle bar click style */
 .toggleOPtion_mobile {
   font-family: 'poppins' sans-serif;
-  font-size: 1.1rem;
-  margin: 50px;
-  width: 220px;
-  height: 300px;
+  /* font-size: 1.1rem; */
+  margin: 30px;
+  width: 190px;
+  height: 290px;
   background-color: black;
   color: white;
   border-radius: 15px;
@@ -551,6 +552,7 @@ html {
   z-index: 9999;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
+  margin-top: 55px;
 }
 .toggleOPtion_mobile.active {
   left: 0;
@@ -574,9 +576,8 @@ html {
 .mobile_list_item {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   color: white;
-  padding-top: 30px;
   margin: 20px;
   flex: 1;
 }
@@ -589,6 +590,7 @@ html {
   align-items: center;
   margin-right: 5px;
   font-weight: 600;
+  font-size: 15px;
 }
 
 .mobile_link.active {
@@ -601,6 +603,7 @@ html {
   border-color: 1px solid white;
   background: #8d8484;
   opacity: 0.99;
+  font-size: 0.5rem;
 }
 .side_overlay {
   position: fixed;
@@ -621,9 +624,14 @@ html {
 
 @media (min-width: 769px) {
   .toggleOPtion_mobile {
-    right: -250px !important; /* hide sidebar on desktop */
+    right: -250px !important;
   }
   .side_overlay {
-    display: none !important; /* overlay gone on desktop */
+    display: none !important;
   }
+}
+
+.mobile_link:hover {
+  border-color: 1px solid white;
+  background: #8d8484;
 }

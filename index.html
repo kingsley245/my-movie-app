@@ -90,20 +90,24 @@
       <div class="mobile_menu_listItem">
         <div class="mobile_menu_items">
           <ul class="mobile_list_item">
-            <li class="mobile_link">
-              <a href="#">Home</a>
+            <li class="mobile_link" id="ToggleMenu">
+              <a href="#home" data-link="home">Home</a>
+            </li>
+            <li class="mobile_link" id="ToggleMenu">
+              <a href="#tv" data-link="TvShow">TV show</a>
+            </li>
+            <li class="mobile_link" id="ToggleMenu">
+              <a href="#Movie" data-link="Movie">Movie</a>
+            </li>
+            <li class="mobile_link" id="ToggleMenu">
+              <a href="#Trending" data-link="Trending" id="ToggleMenu"
+                >Trending</a
+              >
             </li>
             <li class="mobile_link">
-              <a href="#">TV show</a>
-            </li>
-            <li class="mobile_link">
-              <a href="#">Movie</a>
-            </li>
-            <li class="mobile_link">
-              <a href="#">Trending</a>
-            </li>
-            <li class="mobile_link">
-              <a href="#">TV series</a>
+              <a href="#TVseries" data-link="TvSeries" id="ToggleMenu"
+                >TV series</a
+              >
             </li>
           </ul>
         </div>
@@ -115,22 +119,27 @@
         <ul class="sidebar__list-item">
           <li class="sidebar-list-item-l">
             <i class="fas fa-home"></i
-            ><a href="#home" class="left-side">Home</a>
+            ><a href="#home" class="left-side" data-link="home">Home</a>
           </li>
           <li class="sidebar-list-item-l">
-            <i class="fas fa-tv"></i><a href="#tv" class="left-side">Tv show</a>
+            <i class="fas fa-tv"></i
+            ><a href="#tv" class="left-side" data-link="TvShow">Tv show</a>
           </li>
           <li class="sidebar-list-item-l">
             <i class="fas fa-film"></i
-            ><a href="#Movie" class="left-side">Movie</a>
+            ><a href="#Movie" class="left-side" data-link="Movie">Movie</a>
           </li>
           <li class="sidebar-list-item-l">
             <i class="fas fa-fire"></i
-            ><a href="#Trending" class="left-side">Trending</a>
+            ><a href="#Trending" class="left-side" data-link="Trending"
+              >Trending</a
+            >
           </li>
           <li class="sidebar-list-item-l">
             <i class="fas fa-dragon"></i
-            ><a href="#tvseries" class="left-side">Tv series</a>
+            ><a href="#tvseries" class="left-side" data-link="TvSeries"
+              >Tv series</a
+            >
           </li>
           <li class="sidebar-list-item-l">
             <i class="fas fa-search"></i
