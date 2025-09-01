@@ -288,7 +288,7 @@ html {
 .movie-card {
   position: relative;
   min-width: 1px;
-  height: 60%;
+  /* height: 60%; */
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -344,15 +344,19 @@ html {
   height: 2.4em;
 }
 
-/* 📱 Mobile: show ~5–7 cards */
+/*  Mobile: show ~5–7 cards */
 @media (max-width: 768px) {
   .movie-card {
     width: calc(100% / 5 - 0.5rem); /* 5 cards per row */
     height: 250px;
   }
+  .trending-section {
+    /* margin-left: 0; */
+    margin: ;
+  }
 }
 
-/* 💻 Tablet: show ~4 cards */
+/* Tablet: show ~4 cards */
 @media (min-width: 769px) and (max-width: 1024px) {
   .movie-card {
     width: calc(100% / 4 - 1rem);
@@ -360,7 +364,7 @@ html {
   }
 }
 
-/* 🖥️ Desktop: show ~3 cards */
+/* Desktop: show ~3 cards */
 @media (min-width: 1025px) {
   .movie-card {
     width: 200px; /* fixed size for nice spacing */
@@ -456,7 +460,9 @@ html {
   flex-direction: column;
   align-items: center;
   margin: 6px;
-  width: 150px;
+  flex: 0 0 auto; /* prevent shrinking */
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .movie-card img {
