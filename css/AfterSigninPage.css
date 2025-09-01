@@ -356,7 +356,7 @@ html {
 @media (min-width: 769px) and (max-width: 1024px) {
   .movie-card {
     width: calc(100% / 4 - 1rem);
-    height: 250px;
+    height: 230px;
   }
 }
 
