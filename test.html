@@ -7,89 +7,168 @@
   </head>
 
   <style>
-    .toggleOPtion_mobile {
-      font-family: 'poppins' sans-serif;
-      font-size: 1.1rem;
-      margin: 50px;
-      width: 220px;
-      height: 300px;
-      background-color: black;
-      color: white;
-      border-radius: 15px;
+    .scroll-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 8px;
+      padding: 10px;
+      scroll-behavior: smooth;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .scroll-container::-webkit-scrollbar {
+      display: none;
     }
 
-    .mobile_list_item li {
-      list-style: none;
-    }
-
-    .mobile_list_item li a {
-      list-style: none;
-      text-decoration: none;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-    }
-    .mobile_list_item {
+    .movie-card {
+      flex: 0 0 auto;
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
-      color: white;
-      padding-top: 30px;
-      margin: 20px;
-      flex: 1;
-    }
-
-    .mobile_link {
-      /* background-color: red; */
-      border-radius: 8px;
-      padding: 5px 5px;
-      justify-content: center;
       align-items: center;
-      margin-right: 5px;
-      font-weight: 600;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #000;
+      transition: transform 0.3s;
+    }
+    .movie-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .movie-card:hover {
+      transform: scale(1.05);
     }
 
-    .mobile_link.active {
-      border-color: 1px solid white;
-      background: #8d8484;
-      opacity: 0.99;
+    /* Mobile: force 5–7 cards per row */
+    @media (max-width: 768px) {
+      .movie-card {
+        width: calc(100% / 5 - 0.5rem); /* 5 per row */
+        height: 180px;
+      }
+    }
+    @media (max-width: 480px) {
+      .movie-card {
+        width: calc(100% / 6 - 0.5rem); /* ~6 per row */
+        height: 160px;
+      }
     }
 
-    .mobile_link.focus {
-      border-color: 1px solid white;
-      background: #8d8484;
-      opacity: 0.99;
+    /* Tablet */
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .movie-card {
+        width: calc(100% / 4 - 0.5rem);
+        height: 220px;
+      }
     }
 
-    .mobile_link:hover {
-      border-color: 1px solid white;
-      background: #8d8484;
+    /* Desktop */
+    @media (min-width: 1025px) {
+      .movie-card {
+        width: 200px;
+        height: 260px;
+      }
+    }
+
+    /* Scroll arrows (optional) */
+    .scroll-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
+      cursor: pointer;
+      z-index: 10;
+      padding: 0.5rem;
+      border-radius: 50%;
+    }
+    .scroll-arrow.left {
+      left: 10px;
+    }
+    .scroll-arrow.right {
+      right: 10px;
     }
   </style>
-  <body>
-    <div class="toggleOPtion_mobile">
-      <div class="mobile_menu_listItem">
-        <div class="mobile_menu_items">
-          <ul class="mobile_list_item">
-            <li class="mobile_link">
-              <a href="#">Home</a>
-            </li>
-            <li class="mobile_link">
-              <a href="#">TV show</a>
-            </li>
-            <li class="mobile_link">
-              <a href="#">Movie</a>
-            </li>
-            <li class="mobile_link">
-              <a href="#">Trending</a>
-            </li>
-            <li class="mobile_link">
-              <a href="#">TV series</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </body>
+  <body></body>
 </html>
+<div class="movie-row">
+  <h2 class="row-title">Trending Now</h2>
+
+  <!-- Left Arrow -->
+  <button class="scroll-arrow left" onclick="scrollRow(this, -1)">
+    &#10094;
+  </button>
+
+  <!-- Scrollable container -->
+  <div class="scroll-container">
+    <div class="movie-card">
+      <img src="images/image.png" alt="Movie 1" />
+    </div>
+    <div class="movie-card">
+      <img
+        src="https://via.placeholder.com/200x300?text=Movie+2"
+        alt="Movie 2"
+      />
+    </div>
+    <div class="movie-card">
+      <img
+        src="https://via.placeholder.com/200x300?text=Movie+3"
+        alt="Movie 3"
+      />
+    </div>
+    <div class="movie-card">
+      <img
+        src="https://via.placeholder.com/200x300?text=Movie+4"
+        alt="Movie 4"
+      />
+    </div>
+    <div class="movie-card">
+      <img
+        src="https://via.placeholder.com/200x300?text=Movie+5"
+        alt="Movie 5"
+      />
+    </div>
+    <div class="movie-card">
+      <img
+        src="https://via.placeholder.com/200x300?text=Movie+6"
+        alt="Movie 6"
+      />
+    </div>
+    <div class="movie-card">
+      <img
+        src="https://via.placeholder.com/200x300?text=Movie+7"
+        alt="Movie 7"
+      />
+    </div>
+    <div class="movie-card">
+      <img
+        src="https://via.placeholder.com/200x300?text=Movie+8"
+        alt="Movie 8"
+      />
+    </div>
+    <div class="movie-card">
+      <img
+        src="https://via.placeholder.com/200x300?text=Movie+9"
+        alt="Movie 9"
+      />
+    </div>
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="scroll-arrow right" onclick="scrollRow(this, 1)">
+    &#10095;
+  </button>
+
+  <script>
+    function scrollRow(button, direction) {
+      const container = button.parentElement.querySelector('.scroll-container');
+      const card = container.querySelector('.movie-card');
+      const scrollAmount = card.offsetWidth * 3; // scroll by 3 cards
+      container.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</div>

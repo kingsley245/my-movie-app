@@ -274,6 +274,9 @@ html {
   padding: 10px;
   scroll-behavior: smooth;
   position: relative;
+  scrollbar-width: none;
+  display: flex;
+  -ms-overflow-style: none;
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -286,9 +289,8 @@ html {
 }
 
 .movie-card {
-  position: relative;
-  min-width: 1px;
-  /* height: 60%; */
+  /* position: relative; */
+  /* min-width: 1px; */
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -300,7 +302,9 @@ html {
   color: white;
   text-align: center;
   scroll-snap-align: start;
+  width: 150px;
   -webkit-overflow-scrolling: touch;
+  align-items: center;
 }
 
 .movie-card:hover {
@@ -342,34 +346,6 @@ html {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   height: 2.4em;
-}
-
-/*  Mobile: show ~5–7 cards */
-@media (max-width: 768px) {
-  .movie-card {
-    width: calc(100% / 5 - 0.5rem); /* 5 cards per row */
-    height: 250px;
-  }
-  .trending-section {
-    /* margin-left: 0; */
-    margin: ;
-  }
-}
-
-/* Tablet: show ~4 cards */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .movie-card {
-    width: calc(100% / 4 - 1rem);
-    height: 230px;
-  }
-}
-
-/* Desktop: show ~3 cards */
-@media (min-width: 1025px) {
-  .movie-card {
-    width: 200px; /* fixed size for nice spacing */
-    height: 250px;
-  }
 }
 
 /* Scroll arrows */
@@ -421,6 +397,37 @@ html {
   .trending-section {
     margin-left: 0;
     padding: 1rem;
+    margin: 0;
+  }
+}
+
+/* cards media query */
+@media (max-width: 768px) {
+  .movie-card {
+    width: calc(100% / 5 - 00.5rem);
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-card {
+    width: calc(100% / 6 = 0.5rem);
+    height: 160px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .movie-card {
+    width: calc(100% / 4 - 0.5rem);
+    height: 220px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .movie-card {
+    width: 200px;
+    height: 260px;
   }
 }
 
@@ -453,16 +460,6 @@ html {
 }
 .scroll-arrow {
   display: none;
-}
-
-.movie-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 6px;
-  flex: 0 0 auto; /* prevent shrinking */
-  border-radius: 8px;
-  overflow: hidden;
 }
 
 .movie-card img {
