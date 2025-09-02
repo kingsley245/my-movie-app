@@ -39,6 +39,11 @@ html {
   background: black;
   padding: 10px 20px;
   flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
 }
 
 .navbar-left {
@@ -58,8 +63,8 @@ html {
   background: #222;
   padding: 5px 10px;
   border-radius: 8px;
-  flex: 1;
   margin: 0 20px;
+  flex: 1;
 }
 
 .search-bar input {
@@ -108,12 +113,15 @@ html {
     color: white;
     font-size: 20px;
   }
+  .logo img {
+    height: 20px;
+  }
 }
 
 /* Sidebar menu */
 .sidebar-menu {
   position: fixed;
-  top: 0;
+  top: 40px;
   left: 0;
   width: 100%;
   background-color: var(--color-dark);
@@ -165,6 +173,7 @@ html {
   z-index: 10;
   overflow-y: auto;
   box-sizing: border-box;
+  margin-top: 50px;
 }
 
 .side__bar-container-list {
@@ -259,6 +268,7 @@ html {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-top: 70px;
 }
 
 .trending-header {
@@ -357,25 +367,31 @@ html {
   transform: translateY(-50%);
   background-color: black;
   color: white;
-  border: none;
+  border: 1px solid #fff;
   border-radius: 50%;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 20;
-  box-shadow: 0 0 8px rgba(229, 9, 20, 0.8);
+  /* box-shadow: 0 0 8px rgba(229, 9, 20, 0.8); */
   transition: background-color 0.3s ease;
 }
 
 .scroll-arrow:hover {
-  background-color: #b4060f;
+  background-color: #fff;
+  /* opacity: 0.2; */
+  color: #fff;
 }
 
 .scroll-left {
   left: 270px;
+}
+.scroll-left:hover,
+.scroll-right:hover {
+  color: black;
 }
 
 .scroll-right {
@@ -473,11 +489,12 @@ html {
   background-color: rgba(0, 0, 0, 0.6);
   border: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 0.5rem 0.75rem;
   cursor: pointer;
   display: flex;
   border-radius: 50%;
+  border: 1px solid #fff;
 }
 
 .scroll-left {

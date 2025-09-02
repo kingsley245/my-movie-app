@@ -26,7 +26,6 @@ function loadContent(pageKey) {
     return a && a.getAttribute('href') === `#${pageKey}`;
   });
   if (targetLi) targetLi.classList.add('active');
-  console.log(links);
 
   // Load HTML
   fetch(file)
@@ -152,7 +151,6 @@ function showACTIVE(pageKey) {
     return a && a.getAttribute('href') === `#${pageKey}`;
   });
   if (recentLI) recentLI.classList.add('active');
-  console.log(mobile_link_active);
 }
 
 // handles mobile click events
