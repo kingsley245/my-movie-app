@@ -331,7 +331,7 @@ html {
 }
 
 .movie-rating i {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 215, 0);
 }
 
 .movie-title {
@@ -663,10 +663,11 @@ html {
 @media (max-width: 768px) {
   .movie-card {
     display: flex;
-    flex-direction: column; /* image + title stacked */
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 80px; /* shrink for 5–6 per row */
+    width: 80px;
+
     height: auto;
     margin: 5px;
     background: transparent;
@@ -693,6 +694,7 @@ html {
     overflow: hidden;
   }
 
-  .trending-header {
+  .movie-rating {
+    font-size: 8px;
   }
 }
