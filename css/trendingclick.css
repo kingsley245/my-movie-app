@@ -7,7 +7,7 @@ body {
   justify-content: center;
 }
 
-.overlay {
+.overlay_movieDetails {
   position: fixed;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@ body {
   padding: 20px;
 }
 
-.card {
+.card_Details {
   background-color: #111;
   color: white;
   width: 100%;
@@ -34,7 +34,7 @@ body {
   transform-origin: center;
 }
 
-.card img {
+.card_Details img {
   width: 100%;
   height: auto;
   display: block;
@@ -45,12 +45,12 @@ body {
   padding: 16px;
 }
 
-.title {
+.movie_details_title {
   font-size: 24px;
   font-weight: bold;
 }
 
-.tags {
+.movie_tages {
   margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
@@ -62,12 +62,13 @@ body {
   background-color: #444;
   padding: 10px 20px;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 10px;
 }
 
-.description {
+.movie_details_description {
   font-size: 16px;
   margin: 15px 0;
+  margin: 0 auto;
 }
 
 .get-started {
@@ -124,15 +125,15 @@ body {
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
-  .card {
+  .card_Details {
     max-width: 90%;
   }
 
-  .title {
+  .movie_details_title {
     font-size: 20px;
   }
 
-  .description {
+  .movie_details_description {
     font-size: 14px;
   }
 
@@ -149,7 +150,7 @@ body {
     padding: 12px;
   }
 
-  .title {
+  .movie_details_title {
     font-size: 18px;
   }
 
@@ -158,7 +159,7 @@ body {
     padding: 4px 12px;
   }
 
-  .description {
+  .movie_details_description {
     font-size: 13px;
   }
 

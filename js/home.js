@@ -85,7 +85,7 @@ fetchtest();
 // const btnLeft = document.querySelector('.scroll-left');
 // const btnRight = document.querySelector('.scroll-right');
 
-() => {
+(() => {
   const scrollContainer = document.getElementById('scroll_container-movie');
   const btnLeft = document.querySelector('.scroll-left');
   const btnRight = document.querySelector('.scroll-right');
@@ -132,8 +132,61 @@ fetchtest();
       behavior: 'smooth'
     });
   });
-};
+})();
 // How much to scroll per click (adjust this to match card width + gap)
+
+// trending movie details
+function ShowMovieDetails(movie) {
+  const template = document.getElementById('MovieDetailsTemplate');
+  const clone = template.content.cloneNode(true);
+
+  // fill details
+  const overlay = clone.querySelector('.overlay_movieDetails');
+  const card = clone.querySelector('.card_Details');
+  const closeBtn = clone.querySelector('.closeBtn');
+  console.log(template);
+  console.log(clone.querySelector('.detailImage'));
+
+  clone.querySelector(
+    '.detailImage'
+  ).src = `https://image.tmdb.org/t/p/w500${movie.backdrop_path}`;
+  clone.querySelector('.detailImage').alt = movie.title || movie.name;
+  clone.querySelector('.movie_details_title').textContent =
+    movie.title || movie.name;
+  clone.querySelector('.movie_details_description').textContent =
+    movie.overview;
+
+  const tags = clone.querySelector('.movie_tages');
+  tags.innerHTML = `
+    <span class="tag">${(
+      movie.release_date ||
+      movie.first_air_date ||
+      ''
+    ).slice(0, 4)}</span>
+    <span class="tag">16+</span>
+    <span class="tag">${movie.media_type || 'Movie'}</span>
+    <span class="tag">Action</span>
+    <span class="tag">Thriller</span>
+  `;
+
+  // close modal function
+  function closeCard() {
+    card.classList.add('fade-out');
+    setTimeout(() => {
+      overlay.remove();
+    }, 300);
+  }
+
+  closeBtn.addEventListener('click', closeCard);
+
+  overlay.addEventListener('click', (e) => {
+    if (!card.contains(e.target)) {
+      closeCard();
+    }
+  });
+
+  document.body.appendChild(clone);
+}
 
 async function fetchNollyWoodTrailer() {
   try {
@@ -162,6 +215,9 @@ async function fetchNollyWoodTrailer() {
       `;
 
       wrapper.appendChild(card);
+      card.addEventListener('click', () => {
+        ShowMovieDetails(movie);
+      });
     });
   } catch (error) {
     console.error(' Error fetching videos from TMDB:', error);

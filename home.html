@@ -1,4 +1,4 @@
-<div class="trending-header">Trending Nollywood Trailers</div>
+<div class="trending-header">Up coming</div>
 <div class="scroll-wrapper">
   <button
     class="scroll-arrow scroll-left"
@@ -20,112 +20,21 @@
   </button>
 </div>
 
-<!-- <div class="trending-header">Trending nigeria Comedy</div>
-<div class="scroll-wrapper">
-  <button
-    class="scroll-arrow scroll-left"
-    id="scroll-left"
-    aria-label="Scroll left"
-  >
-    <i class="fas fa-chevron-left"></i>
-  </button>
-
-  <div class="scroll-container">
-    <div class="trending-cards-wrapper" id="nigeria-comedy-wrapper"></div>
+<template id="MovieDetailsTemplate">
+  <div class="overlay_movieDetails">
+    <div class="height">
+      <div class="card_Details">
+        <i class="fas fa-times close-icon closeBtn"></i>
+        <img src=" " alt="Movie image" class="detailImage" id="click_new" />
+        <div class="card_content">
+          <div class="movie_details_title">TITLE</div>
+          <div class="movie_tages"></div>
+          <div class="movie_details_description">DESCRIPTION</div>
+          <button class="get-started">
+            Get started <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
-  <button
-    class="scroll-arrow scroll-right"
-    id="scroll-right"
-    aria-label="Scroll right"
-  >
-    <i class="fas fa-chevron-right"></i>
-  </button>
-</div> -->
-
-<!-- <div class="trending-header">Trending K-drama</div>
-<div class="scroll-wrapper">
-  <button
-    class="scroll-arrow scroll-left"
-    id="scroll-left"
-    aria-label="Scroll left"
-  >
-    <i class="fas fa-chevron-left"></i>
-  </button>
-
-  <div class="scroll-container">
-    <div class="trending-cards-wrapper" id="kdrama-wrapper"></div>
-  </div>
-  <button
-    class="scroll-arrow scroll-right"
-    id="scroll-right"
-    aria-label="Scroll right"
-  >
-    <i class="fas fa-chevron-right"></i>
-  </button>
-</div> -->
-<!-- 
-<div class="trending-header">Romantic movies</div>
-<div class="scroll-wrapper">
-  <button
-    class="scroll-arrow scroll-left"
-    id="scroll-left"
-    aria-label="Scroll left"
-  >
-    <i class="fas fa-chevron-left"></i>
-  </button>
-
-  <div class="scroll-container">
-    <div class="trending-cards-wrapper" id="romantic-wrapper"></div>
-  </div>
-  <button
-    class="scroll-arrow scroll-right"
-    id="scroll-right"
-    aria-label="Scroll right"
-  >
-    <i class="fas fa-chevron-right"></i>
-  </button>
-</div> -->
-
-<!-- <div class="trending-header">Hollywood Romantic Movies</div>
-<div class="scroll-wrapper">
-  <button
-    class="scroll-arrow scroll-left"
-    id="scroll-left"
-    aria-label="Scroll left"
-  >
-    <i class="fas fa-chevron-left"></i>
-  </button>
-
-  <div class="scroll-container">
-    <div class="trending-cards-wrapper" id="hollywood-romantic-wrapper"></div>
-  </div>
-  <button
-    class="scroll-arrow scroll-right"
-    id="scroll-right"
-    aria-label="Scroll right"
-  >
-    <i class="fas fa-chevron-right"></i>
-  </button>
-</div> -->
-
-<!-- <div class="trending-header">Action Movies</div>
-<div class="scroll-wrapper">
-  <button
-    class="scroll-arrow scroll-left"
-    id="scroll-left"
-    aria-label="Scroll left"
-  >
-    <i class="fas fa-chevron-left"></i>
-  </button>
-
-  <div class="scroll-container">
-    <div class="trending-cards-wrapper" id="action-wrapper"></div>
-  </div>
-  <button
-    class="scroll-arrow scroll-right"
-    id="scroll-right"
-    aria-label="Scroll right"
-  >
-    <i class="fas fa-chevron-right"></i>
-  </button>
-</div> -->
+</template>
