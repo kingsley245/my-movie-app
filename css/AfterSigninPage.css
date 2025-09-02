@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
 body,
 html {
   background: var(--color-dark);
@@ -483,6 +487,20 @@ html {
   right: 0;
 }
 
+@media (max-width: 768px) {
+  .trending-section,
+  .after-side-card,
+  .scroll-wrapper,
+  .scroll-container {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .movie-card {
+    margin: 0 5px; /* small gap but no big space */
+  }
+}
 /* after-side-card footer section */
 .after-side-card {
   border-top: 1px solid rgb(139, 132, 132);
