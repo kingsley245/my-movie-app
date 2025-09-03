@@ -273,7 +273,7 @@ html {
 
 .trending-header {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 0;
   color: var(--color-white);
   flex-shrink: 0;
@@ -507,6 +507,17 @@ html {
   right: 0;
 }
 
+.scroll-arrow {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-arrow.hidden {
+  opacity: 0;
+  display: none;
+  pointer-events: none; /* so it can’t be clicked when invisible */
+}
+
 @media (max-width: 768px) {
   .trending-section,
   .after-side-card,
@@ -531,7 +542,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-top: 8rem;
+  /* margin-top: 8rem; */
   margin-left: 250px;
 }
 

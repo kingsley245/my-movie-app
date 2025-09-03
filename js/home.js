@@ -49,34 +49,34 @@ fetchtest();
   const btnLeft = document.querySelector('.scroll-left');
   const btnRight = document.querySelector('.scroll-right');
 
+  if (!scrollContainer || !btnLeft || !btnRight) return;
+
   const scrollAmount = 500;
 
-  // Check arrow visibility
   function updateArrows() {
     const scrollLeft = scrollContainer.scrollLeft;
     const scrollWidth = scrollContainer.scrollWidth;
     const clientWidth = scrollContainer.clientWidth;
 
-    // Hide left arrow if at start
-    if (scrollLeft <= 0) {
-      btnLeft.classList.add('hidden');
-    } else {
-      btnLeft.classList.remove('hidden');
-    }
+    // hide left arrow if at start
+    btnLeft.classList.toggle('hidden', scrollLeft <= 0);
 
-    // Hide right arrow if at end
-    if (scrollLeft + clientWidth >= scrollWidth - 1) {
-      btnRight.classList.add('hidden');
-    } else {
-      btnRight.classList.remove('hidden');
-    }
+    // hide right arrow if at end
+    btnRight.classList.toggle(
+      'hidden',
+      scrollLeft + clientWidth >= scrollWidth - 1
+    );
   }
 
-  // Run when page loads and when user scrolls
+  // run immediately once
+  updateArrows();
+
+  // run again on load, scroll, resize
   window.addEventListener('load', updateArrows);
   scrollContainer.addEventListener('scroll', updateArrows);
+  window.addEventListener('resize', updateArrows);
 
-  // Left button scroll
+  // left button scroll
   btnLeft.addEventListener('click', () => {
     scrollContainer.scrollBy({
       left: -scrollAmount,
@@ -84,7 +84,7 @@ fetchtest();
     });
   });
 
-  // Right button scroll
+  // right button scroll
   btnRight.addEventListener('click', () => {
     scrollContainer.scrollBy({
       left: scrollAmount,
@@ -101,6 +101,8 @@ fetchtest();
   );
   const btnLeft = document.getElementById('scroll-left-popular');
   const btnRight = document.getElementById('scroll-right-popular');
+
+  if (!scrollContainer || !btnLeft || !btnRight) return;
 
   const scrollAmount = 500; // adjust to card width + gap
 
@@ -119,9 +121,13 @@ fetchtest();
     );
   }
 
-  // run when page loads and when user scrolls
+  // run immediately once
+  updateArrows();
+
+  // run again on load, scroll, resize
   window.addEventListener('load', updateArrows);
   scrollContainer.addEventListener('scroll', updateArrows);
+  window.addEventListener('resize', updateArrows);
 
   // left button scroll
   btnLeft.addEventListener('click', () => {
@@ -148,6 +154,8 @@ fetchtest();
   const btnLeft = document.getElementById('scroll-left-nowplaying');
   const btnRight = document.getElementById('scroll-right-nowplaying');
 
+  if (!scrollContainer || !btnLeft || !btnRight) return;
+
   const scrollAmount = 500; // adjust to card width + gap
 
   function updateArrows() {
@@ -165,9 +173,13 @@ fetchtest();
     );
   }
 
-  // run when page loads and when user scrolls
+  // run immediately once
+  updateArrows();
+
+  // run again when page loads, scrolling, or resizing
   window.addEventListener('load', updateArrows);
   scrollContainer.addEventListener('scroll', updateArrows);
+  window.addEventListener('resize', updateArrows);
 
   // left button scroll
   btnLeft.addEventListener('click', () => {
@@ -191,12 +203,12 @@ fetchtest();
   const scrollContainer = document.getElementById(
     'scroll_container-top_rated-movies'
   );
-  console.log(scrollContainer);
-
   const btnLeft = document.getElementById('scroll-left-top_rated');
   const btnRight = document.getElementById('scroll-right-top_rated');
 
-  const scrollAmount = 500; // adjust to card width + gap
+  if (!scrollContainer || !btnLeft || !btnRight) return;
+
+  const scrollAmount = 500;
 
   function updateArrows() {
     const scrollLeft = scrollContainer.scrollLeft;
@@ -213,24 +225,18 @@ fetchtest();
     );
   }
 
-  // run when page loads and when user scrolls
-  window.addEventListener('load', updateArrows);
-  scrollContainer.addEventListener('scroll', updateArrows);
+  updateArrows();
 
-  // left button scroll
+  scrollContainer.addEventListener('scroll', updateArrows);
+  window.addEventListener('resize', updateArrows);
+
+  // scroll left
   btnLeft.addEventListener('click', () => {
-    scrollContainer.scrollBy({
-      left: -scrollAmount,
-      behavior: 'smooth'
-    });
+    scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
   });
 
-  // right button scroll
   btnRight.addEventListener('click', () => {
-    scrollContainer.scrollBy({
-      left: scrollAmount,
-      behavior: 'smooth'
-    });
+    scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
   });
 })();
 
