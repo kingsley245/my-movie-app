@@ -58,7 +58,6 @@ fetchtest();
     const scrollWidth = scrollContainer.scrollWidth;
     const clientWidth = scrollContainer.clientWidth;
 
-    // hide left arrow if at start
     btnLeft.classList.toggle('hidden', scrollLeft <= 0);
 
     // hide right arrow if at end
@@ -68,10 +67,8 @@ fetchtest();
     );
   }
 
-  // run immediately once
   updateArrows();
 
-  // run again on load, scroll, resize
   window.addEventListener('load', updateArrows);
   scrollContainer.addEventListener('scroll', updateArrows);
   window.addEventListener('resize', updateArrows);
@@ -104,24 +101,21 @@ fetchtest();
 
   if (!scrollContainer || !btnLeft || !btnRight) return;
 
-  const scrollAmount = 500; // adjust to card width + gap
+  const scrollAmount = 500;
 
   function updateArrows() {
     const scrollLeft = scrollContainer.scrollLeft;
     const scrollWidth = scrollContainer.scrollWidth;
     const clientWidth = scrollContainer.clientWidth;
 
-    // hide left arrow if at start
     btnLeft.classList.toggle('hidden', scrollLeft <= 0);
 
-    // hide right arrow if at end
     btnRight.classList.toggle(
       'hidden',
       scrollLeft + clientWidth >= scrollWidth - 1
     );
   }
 
-  // run immediately once
   updateArrows();
 
   // run again on load, scroll, resize
@@ -156,24 +150,21 @@ fetchtest();
 
   if (!scrollContainer || !btnLeft || !btnRight) return;
 
-  const scrollAmount = 500; // adjust to card width + gap
+  const scrollAmount = 500;
 
   function updateArrows() {
     const scrollLeft = scrollContainer.scrollLeft;
     const scrollWidth = scrollContainer.scrollWidth;
     const clientWidth = scrollContainer.clientWidth;
 
-    // hide left arrow if at start
     btnLeft.classList.toggle('hidden', scrollLeft <= 0);
 
-    // hide right arrow if at end
     btnRight.classList.toggle(
       'hidden',
       scrollLeft + clientWidth >= scrollWidth - 1
     );
   }
 
-  // run immediately once
   updateArrows();
 
   // run again when page loads, scrolling, or resizing
@@ -215,10 +206,8 @@ fetchtest();
     const scrollWidth = scrollContainer.scrollWidth;
     const clientWidth = scrollContainer.clientWidth;
 
-    // hide left arrow if at start
     btnLeft.classList.toggle('hidden', scrollLeft <= 0);
 
-    // hide right arrow if at end
     btnRight.classList.toggle(
       'hidden',
       scrollLeft + clientWidth >= scrollWidth - 1
@@ -230,7 +219,6 @@ fetchtest();
   scrollContainer.addEventListener('scroll', updateArrows);
   window.addEventListener('resize', updateArrows);
 
-  // scroll left
   btnLeft.addEventListener('click', () => {
     scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
   });
