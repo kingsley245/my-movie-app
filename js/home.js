@@ -140,6 +140,100 @@ fetchtest();
   });
 })();
 
+// scroll container for Now playing movies
+(() => {
+  const scrollContainer = document.getElementById(
+    'scroll_container-nowplaying-movies'
+  );
+  const btnLeft = document.getElementById('scroll-left-nowplaying');
+  const btnRight = document.getElementById('scroll-right-nowplaying');
+
+  const scrollAmount = 500; // adjust to card width + gap
+
+  function updateArrows() {
+    const scrollLeft = scrollContainer.scrollLeft;
+    const scrollWidth = scrollContainer.scrollWidth;
+    const clientWidth = scrollContainer.clientWidth;
+
+    // hide left arrow if at start
+    btnLeft.classList.toggle('hidden', scrollLeft <= 0);
+
+    // hide right arrow if at end
+    btnRight.classList.toggle(
+      'hidden',
+      scrollLeft + clientWidth >= scrollWidth - 1
+    );
+  }
+
+  // run when page loads and when user scrolls
+  window.addEventListener('load', updateArrows);
+  scrollContainer.addEventListener('scroll', updateArrows);
+
+  // left button scroll
+  btnLeft.addEventListener('click', () => {
+    scrollContainer.scrollBy({
+      left: -scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+
+  // right button scroll
+  btnRight.addEventListener('click', () => {
+    scrollContainer.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+})();
+
+// scroll container for Top Rated movies
+(() => {
+  const scrollContainer = document.getElementById(
+    'scroll_container-top_rated-movies'
+  );
+  console.log(scrollContainer);
+
+  const btnLeft = document.getElementById('scroll-left-top_rated');
+  const btnRight = document.getElementById('scroll-right-top_rated');
+
+  const scrollAmount = 500; // adjust to card width + gap
+
+  function updateArrows() {
+    const scrollLeft = scrollContainer.scrollLeft;
+    const scrollWidth = scrollContainer.scrollWidth;
+    const clientWidth = scrollContainer.clientWidth;
+
+    // hide left arrow if at start
+    btnLeft.classList.toggle('hidden', scrollLeft <= 0);
+
+    // hide right arrow if at end
+    btnRight.classList.toggle(
+      'hidden',
+      scrollLeft + clientWidth >= scrollWidth - 1
+    );
+  }
+
+  // run when page loads and when user scrolls
+  window.addEventListener('load', updateArrows);
+  scrollContainer.addEventListener('scroll', updateArrows);
+
+  // left button scroll
+  btnLeft.addEventListener('click', () => {
+    scrollContainer.scrollBy({
+      left: -scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+
+  // right button scroll
+  btnRight.addEventListener('click', () => {
+    scrollContainer.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+})();
+
 // How much to scroll per click (adjust this to match card width + gap)
 
 // trending movie details
@@ -271,6 +365,82 @@ async function PopularMoviesForHome() {
     hideLoader(); // Make sure this is defined elsewhere
   }
 }
+async function ShowNow_playingMovies() {
+  try {
+    const response = await fetchAPIData('movie/now_playing');
+    const popularResult = response.results;
 
+    const wrapper = document.getElementById('now_playing-movies');
+    wrapper.innerHTML = '';
+
+    popularResult.forEach((movie) => {
+      const title =
+        movie.title.length > 10
+          ? movie.title.slice(0, 30) + '...'
+          : movie.title;
+      const rating = movie.vote_average.toFixed(1); // Rounded to 1 decimal
+      const poster = movie.poster_path
+        ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+        : 'fallback.jpg'; // fallback image
+
+      const card = document.createElement('div');
+      card.className = 'movie-card';
+      card.innerHTML = `
+        <img src="${poster}" alt="${title}" />
+        <div class="movie-rating"><i class="fas fa-star"></i> ${rating}</div>
+        <div class="movie-title">${movie.title}</div>
+      `;
+
+      wrapper.appendChild(card);
+      card.addEventListener('click', () => {
+        ShowMovieDetails(movie);
+      });
+    });
+  } catch (error) {
+    console.error(' Error fetching videos from TMDB:', error);
+  } finally {
+    hideLoader(); // Make sure this is defined elsewhere
+  }
+}
+
+async function ShowTop_rated_movies() {
+  try {
+    const response = await fetchAPIData('movie/top_rated');
+    const popularResult = response.results;
+
+    const wrapper = document.getElementById('top_rated-movies');
+    wrapper.innerHTML = '';
+
+    popularResult.forEach((movie) => {
+      const title =
+        movie.title.length > 10
+          ? movie.title.slice(0, 30) + '...'
+          : movie.title;
+      const rating = movie.vote_average.toFixed(1); // Rounded to 1 decimal
+      const poster = movie.poster_path
+        ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+        : 'fallback.jpg'; // fallback image
+
+      const card = document.createElement('div');
+      card.className = 'movie-card';
+      card.innerHTML = `
+        <img src="${poster}" alt="${title}" />
+        <div class="movie-rating"><i class="fas fa-star"></i> ${rating}</div>
+        <div class="movie-title">${movie.title}</div>
+      `;
+
+      wrapper.appendChild(card);
+      card.addEventListener('click', () => {
+        ShowMovieDetails(movie);
+      });
+    });
+  } catch (error) {
+    console.error(' Error fetching videos from TMDB:', error);
+  } finally {
+    hideLoader(); // Make sure this is defined elsewhere
+  }
+}
+ShowNow_playingMovies();
 fetchNollyWoodTrailer();
 PopularMoviesForHome();
+ShowTop_rated_movies();
